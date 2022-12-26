@@ -2,7 +2,7 @@ import { z } from "zod";
 
 import { router, publicProcedure } from "../trpc";
 
-export const exampleRouter = router({
+export const videoRouter = router({
   hello: publicProcedure
     .input(z.object({ text: z.string().nullish() }).nullish())
     .query(({ input }) => {
