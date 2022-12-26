@@ -1,0 +1,32 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+//set up password as "password"
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  
+}
+
+model Video {
+  id        String   @id @default(cuid())
+  video_id Int @unique @default(autoincrement())
+  title     String?
+  search_term  String?
+  reddit_id  String?
+  reddit_title String?
+  reddit_content String?
+  reddit_comments String?
+  script String?
+  thumbnail String?
+  trailer_url String?
+  status_step Int?
+  status String?
+  youtube_url String?
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}
