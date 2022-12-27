@@ -41,7 +41,7 @@ export const RedditReader = ({
                   onClick={() => setSelectedArticle(article)}
                 >
                   <h3 className="text-lg font-semibold">{article.title}</h3>
-                  <p className="text-md text-gray-400">{article.isoDate}</p> 
+              
                 </a>
               </li>
             ))
