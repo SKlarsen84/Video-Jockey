@@ -19,14 +19,12 @@ export const redditRouter = router({
   getArticles: publicProcedure
     .input(z.object({ subReddit: z.string().nullish() }).nullish())
     .query(async ({ input }) => {
-      console.log("running getArticles" + input?.subReddit);
       const parser: Parser<CustomFeed, RedditArticle> = new Parser();
       const feed = await parser.parseURL(
         "https://www.reddit.com/r/" + input?.subReddit + "/.rss"
       );
 
       const articles = feed.items;
-      console.log(articles);
       return {
         articles,
       };
