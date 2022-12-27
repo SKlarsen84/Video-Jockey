@@ -7,14 +7,14 @@ generator client {
 
 //set up password as "password"
 datasource db {
-  provider = "postgresql"
+  provider = "sqlite"
   url      = env("DATABASE_URL")
   
 }
 
 model Video {
   id        String   @id @default(cuid())
-  video_id Int @unique @default(autoincrement())
+  video_id Int @unique
   title     String?
   search_term  String?
   reddit_id  String?
