@@ -10,7 +10,7 @@ interface ArticleViewerProps {
 
 export const ArticleViewer = ({ article }: ArticleViewerProps) => {
   const [isAdding, setIsAdding] = useState<boolean>(false);
-  const mutation = trpc.video.addNewVideo.useMutation();
+  const addVidMutation = trpc.video.addNewVideo.useMutation();
   useEffect(() => {
     const run = async () => {
       const creator = {
@@ -20,14 +20,13 @@ export const ArticleViewer = ({ article }: ArticleViewerProps) => {
         reddit_title: article.title,
         reddit_content: article.content,
       };
-      const v = mutation.mutate({ video: creator });
-      alert(" added to pipeline");
+      addVidMutation.mutate({ video: creator });
     };
 
     isAdding ? run() : null;
 
     setIsAdding(false);
-  }, [article, isAdding, mutation]);
+  }, [article, isAdding, addVidMutation]);
 
   return (
     <section className="flex w-6/12 flex-col rounded-r-3xl bg-white px-4">
