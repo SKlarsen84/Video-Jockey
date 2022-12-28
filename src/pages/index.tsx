@@ -7,6 +7,7 @@ import { ArticleViewer } from "../components/ArticleViewer";
 import { MenuBar } from "../components/MenuBar";
 import { RedditReader } from "../components/RedditReader";
 import { VideoList } from "../components/VideoList";
+import { VideoPipelineViewer } from "../components/VideoPipelineViewer";
 import type { RedditArticle } from "../server/trpc/router/reddit";
 
 const Home: NextPage = () => {
@@ -24,7 +25,13 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex h-full	 w-full place-self-center rounded-3xl shadow-lg">
+      <header className="dark mt-4 mb-0 bg-gray-600">
+        <h1 className="text-center text-4xl font-bold dark:text-white">
+          VideoJockey
+        </h1>
+      </header>
+
+      <main className=" dark	m-12 mt-2 flex place-self-center rounded-3xl shadow-lg ">
         <MenuBar
           navigationPanel={navigationPanel}
           setNavigationPanel={setNavigationPanel}
@@ -33,6 +40,13 @@ const Home: NextPage = () => {
         {navigationPanel === 0 && (
           <VideoList
             selectedVideo={selectedVideo}
+            setSelectedVideo={setSelectedVideo}
+          />
+        )}
+
+        {navigationPanel === 0 && selectedVideo && (
+          <VideoPipelineViewer
+            video={selectedVideo}
             setSelectedVideo={setSelectedVideo}
           />
         )}

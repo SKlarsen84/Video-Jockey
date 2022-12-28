@@ -23,11 +23,53 @@ export const videoRouter = router({
           reddit_id: z.string(),
           reddit_title: z.string(),
           reddit_content: z.string(),
+          reddit_comments: z.string(),
         }),
       })
     )
     .mutation(async ({ ctx, input }) => {
       const video = await ctx.prisma.video.create({
+        data: {
+          ...input.video,
+        },
+      });
+      return video;
+    }),
+
+  //removeVideo takes a video object and removes it from the database
+  removeVideo: publicProcedure
+    .input(
+      z.object({
+        id: z.string(),
+      })
+    )
+    .mutation(async ({ ctx, input }) => {
+      const video = await ctx.prisma.video.delete({
+        where: {
+          id: input.id,
+        },
+      });
+      return video;
+    }),
+
+  //updateVideo takes a video object and updates it in the database
+  updateVideo: publicProcedure
+    .input(
+      z.object({
+        video: z.object({
+          id: z.string(),
+          title: z.string(),
+          reddit_id: z.string(),
+          reddit_title: z.string(),
+          reddit_content: z.string(),
+        }),
+      })
+    )
+    .mutation(async ({ ctx, input }) => {
+      const video = await ctx.prisma.video.update({
+        where: {
+          id: input.video.id,
+        },
         data: {
           ...input.video,
         },

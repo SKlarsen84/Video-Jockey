@@ -33,7 +33,7 @@ export const redditRouter = router({
     }),
 
   getArticleComments: publicProcedure
-    .input(z.object({ articleId: z.string() }))
+    .input(z.string())
     .query(async ({ input }) => {
       const redditReader = new snoowrap({
         accessToken: process.env.REDDIT_ACCESS_TOKEN,
@@ -44,7 +44,7 @@ export const redditRouter = router({
       });
 
       const comms = await redditReader
-        .getSubmission(input?.articleId)
+        .getSubmission(input)
         .expandReplies({ limit: 25, depth: 1 })
         .then((o) => o.comments);
       const comments = comms.map((c) => c.body);

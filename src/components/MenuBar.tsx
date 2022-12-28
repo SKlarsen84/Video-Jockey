@@ -15,7 +15,7 @@ export const MenuBar = ({
   setNavigationPanel,
 }: MenuBarProps) => {
   return (
-    <section className="flex w-2/12 flex-col rounded-l-3xl bg-white">
+    <section className="flex w-1/12 flex-col rounded-l-3xl bg-white dark:bg-gray-800">
       <a
         href="#"
         onClick={() => {
@@ -43,7 +43,7 @@ export const MenuBar = ({
           onClick={() => {
             setNavigationPanel(1);
           }} //set navigationpanel to 1
-          className="mb-4 w-16 rounded-2xl border p-4 text-gray-700"
+          className="mb-4 w-16 rounded-2xl border p-4 text-white"
         >
           Rdit
         </a>

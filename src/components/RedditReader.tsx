@@ -12,11 +12,11 @@ export const RedditReader = ({
   setSelectedArticle,
 }: Props) => {
   const articles = trpc.reddit.getArticles.useQuery({
-    subReddit: "GamingLeaksAndRumours",
+    subReddit: "gamernews",
   });
 
   return (
-    <section className="flex h-full w-4/12 flex-col overflow-y-scroll bg-gray-50 pt-3">
+    <section className="w-12/12 flex h-full flex-col overflow-y-scroll bg-gray-50 pt-3  dark:bg-gray-700">
       <label className="px-3">
         <input
           className="w-full rounded-lg bg-gray-100 p-4 transition duration-200 focus:outline-none focus:ring-2"
@@ -24,29 +24,23 @@ export const RedditReader = ({
         />
       </label>
 
-      <ul className="mt-6">
-        {articles.data
-          ? articles.data.articles.map((article) => (
-              <li
-                className={
-                  selectedArticle?.id === article.id
-                    ? "border-b bg-indigo-100 py-5 px-3 transition"
-                    : "border-b py-5 px-3 transition hover:bg-indigo-100"
-                }
-                key={article.id}
-              >
-                <a
-                  href="#"
-                  className="flex items-center justify-between"
-                  onClick={() => setSelectedArticle(article)}
-                >
-                  <h3 className="text-lg font-semibold">{article.title}</h3>
-              
-                </a>
-              </li>
-            ))
-          : "Loading tRPC query..."}
-      </ul>
+      {articles.data
+        ? articles.data.articles.map((article) => (
+            <a
+              key={article.id}
+              href="#"
+              className="m-2 block max-w-sm rounded-lg border border-gray-200 bg-white p-6 shadow-md hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+              onClick={() => setSelectedArticle(article)}
+            >
+              <p className="text-1xl mb-2 font-bold tracking-tight text-gray-900 dark:text-white">
+                {article.title}
+              </p>
+              <p className="font-normal text-gray-700 dark:text-gray-400">
+                {article.pubDate}
+              </p>
+            </a>
+          ))
+        : "Loading tRPC query..."}
     </section>
   );
 };

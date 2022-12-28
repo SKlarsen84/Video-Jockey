@@ -10,7 +10,9 @@ interface ArticleViewerProps {
 
 export const ArticleViewer = ({ article }: ArticleViewerProps) => {
   const [isAdding, setIsAdding] = useState<boolean>(false);
+  const comments = trpc.reddit.getArticleComments.useQuery(article.id);
   const addVidMutation = trpc.video.addNewVideo.useMutation();
+
   useEffect(() => {
     const run = async () => {
       const creator = {
@@ -19,6 +21,7 @@ export const ArticleViewer = ({ article }: ArticleViewerProps) => {
         reddit_id: article.id,
         reddit_title: article.title,
         reddit_content: article.content,
+        reddit_comments: JSON.stringify(comments.data),
       };
       addVidMutation.mutate({ video: creator });
     };
@@ -26,10 +29,10 @@ export const ArticleViewer = ({ article }: ArticleViewerProps) => {
     isAdding ? run() : null;
 
     setIsAdding(false);
-  }, [article, isAdding, addVidMutation]);
+  }, [article, isAdding, addVidMutation, comments.data]);
 
   return (
-    <section className="flex w-6/12 flex-col rounded-r-3xl bg-white px-4">
+    <section className="flex h-full w-full flex-col rounded-r-3xl bg-white px-4 dark:bg-gray-800">
       <div className="mb-8 flex h-48 items-center justify-between border-b-2">
         <div className="flex items-center space-x-4">
           <p className="text-light text-gray-400">
@@ -47,6 +50,7 @@ export const ArticleViewer = ({ article }: ArticleViewerProps) => {
             dangerouslySetInnerHTML={{ __html: article?.content as string }}
           ></div>
         </article>
+
         <ul className="mt-12 flex space-x-4">
           <li className="h-10 w-10 cursor-pointer rounded-lg border p-1 text-indigo-600 transition duration-200 hover:bg-blue-100">
             <a href="#" onClick={() => setIsAdding(true)}>
@@ -54,6 +58,21 @@ export const ArticleViewer = ({ article }: ArticleViewerProps) => {
             </a>
           </li>
         </ul>
+        
+        <div className="mt-8">
+          <h2 className="text-xl font-bold">Comments</h2>
+          <div className="mt-4">
+            {comments.data
+              ? comments.data.comments.map((comment) => (
+                  <div key={comment} className="flex flex-col space-y-2">
+                    <div className="flex items-center space-x-4">
+                      <p className="text-light text-gray-400">{comment}</p>
+                    </div>
+                  </div>
+                ))
+              : "Loading tRPC query..."}
+          </div>
+        </div>
       </section>
     </section>
   );

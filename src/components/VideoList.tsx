@@ -10,37 +10,33 @@ export const VideoList = ({ selectedVideo, setSelectedVideo }: Props) => {
   const allVideos = trpc.video.getAll.useQuery();
 
   return (
-    <section className="flex h-full w-4/12 flex-col overflow-y-scroll bg-gray-50 pt-3">
+    <section className="w-12/12 flex  flex-col overflow-y-scroll bg-gray-50 pt-3  dark:bg-gray-700">
+   
       <label className="px-3">
         <input
           className="w-full rounded-lg bg-gray-100 p-4 transition duration-200 focus:outline-none focus:ring-2"
           placeholder="Search..."
         />
       </label>
-
-      <ul className="mt-6">
+      <div className="mb-6">
         {allVideos.data
           ? allVideos.data.map((video) => (
-              <li
-                className={
-                  selectedVideo?.id === video.id
-                    ? "border-b bg-indigo-100 py-5 px-3 transition"
-                    : "border-b py-5 px-3 transition hover:bg-indigo-100"
-                }
-                key={video.reddit_id}
+              <a
+                key={video.id}
+                href="#"
+                onClick={() => setSelectedVideo(video)}
+                className="m-2 block max-w-sm rounded-lg border border-gray-200 bg-white p-6 shadow-md hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
               >
-                <a
-                  href="#"
-                  className="flex items-center justify-between"
-                  onClick={() => setSelectedVideo(video)}
-                >
-                  <h3 className="text-lg font-semibold">{video.title}</h3>
-                  <p className="text-md text-gray-400">{video.status}</p>
-                </a>
-              </li>
+                <p className="text-1xl mb-2 font-bold tracking-tight text-gray-900 dark:text-white">
+                  {video.title}
+                </p>
+                <p className="font-normal text-gray-700 dark:text-gray-400">
+                  {video.status}
+                </p>
+              </a>
             ))
           : "Loading tRPC query..."}
-      </ul>
+      </div>
     </section>
   );
 };
