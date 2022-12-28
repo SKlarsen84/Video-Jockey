@@ -27,7 +27,7 @@ export const VideoList = ({ selectedVideo, setSelectedVideo }: Props) => {
                     ? "border-b bg-indigo-100 py-5 px-3 transition"
                     : "border-b py-5 px-3 transition hover:bg-indigo-100"
                 }
-                key={video.video_id}
+                key={video.reddit_id}
               >
                 <a
                   href="#"

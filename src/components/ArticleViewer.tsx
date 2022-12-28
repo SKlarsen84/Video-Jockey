@@ -1,12 +1,34 @@
 import type Parser from "rss-parser";
 import type { RedditArticle } from "../server/trpc/router/reddit";
 import { PlusCircleIcon } from "@heroicons/react/24/outline";
+import { trpc } from "../utils/trpc";
+import { useEffect, useState } from "react";
 
 interface ArticleViewerProps {
-  article: (RedditArticle & Parser.Item) | undefined;
+  article: RedditArticle & Parser.Item;
 }
 
 export const ArticleViewer = ({ article }: ArticleViewerProps) => {
+  const [isAdding, setIsAdding] = useState<boolean>(false);
+  const mutation = trpc.video.addNewVideo.useMutation();
+  useEffect(() => {
+    const run = async () => {
+      const creator = {
+        id: article.id,
+        title: article.title,
+        reddit_id: article.id,
+        reddit_title: article.title,
+        reddit_content: article.content,
+      };
+      const v = mutation.mutate({ video: creator });
+      alert(" added to pipeline");
+    };
+
+    isAdding ? run() : null;
+
+    setIsAdding(false);
+  }, [article, isAdding, mutation]);
+
   return (
     <section className="flex w-6/12 flex-col rounded-r-3xl bg-white px-4">
       <div className="mb-8 flex h-48 items-center justify-between border-b-2">
@@ -28,7 +50,9 @@ export const ArticleViewer = ({ article }: ArticleViewerProps) => {
         </article>
         <ul className="mt-12 flex space-x-4">
           <li className="h-10 w-10 cursor-pointer rounded-lg border p-1 text-indigo-600 transition duration-200 hover:bg-blue-100">
-            <PlusCircleIcon title={"Add this article to pipeline"} />
+            <a href="#" onClick={() => setIsAdding(true)}>
+              <PlusCircleIcon title={"Add this article to pipeline"} />
+            </a>
           </li>
         </ul>
       </section>

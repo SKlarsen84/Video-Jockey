@@ -9,7 +9,6 @@ import { RedditReader } from "../components/RedditReader";
 import { VideoList } from "../components/VideoList";
 import type { RedditArticle } from "../server/trpc/router/reddit";
 
-
 const Home: NextPage = () => {
   const [selectedVideo, setSelectedVideo] = useState<Video>();
   const [selectedArticle, setSelectedArticle] = useState<
@@ -48,7 +47,6 @@ const Home: NextPage = () => {
         {navigationPanel === 1 && selectedArticle && (
           <ArticleViewer article={selectedArticle} />
         )}
-       
       </main>
     </>
   );
