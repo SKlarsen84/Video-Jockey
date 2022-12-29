@@ -84,13 +84,18 @@ export const VideoPipelineViewer = ({
             className="block text-sm font-medium text-gray-700 dark:text-gray-100"
           />
           <Tab
-            label="Pictory"
+            label="Footage"
             {...a11yProps(2)}
             className="block text-sm font-medium text-gray-700 dark:text-gray-100"
           />
           <Tab
-            label="Youtube"
+            label="Pictory"
             {...a11yProps(3)}
+            className="block text-sm font-medium text-gray-700 dark:text-gray-100"
+          />
+          <Tab
+            label="Youtube"
+            {...a11yProps(4)}
             className="block text-sm font-medium text-gray-700 dark:text-gray-100"
           />
         </Tabs>

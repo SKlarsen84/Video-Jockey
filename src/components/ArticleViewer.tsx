@@ -3,6 +3,7 @@ import type { RedditArticle } from "../server/trpc/router/reddit";
 import { PlusCircleIcon } from "@heroicons/react/24/outline";
 import { trpc } from "../utils/trpc";
 import { useEffect, useState } from "react";
+import { Table, TableBody, TableRow, TableCell } from "@mui/material";
 
 interface ArticleViewerProps {
   article: RedditArticle & Parser.Item;
@@ -58,19 +59,32 @@ export const ArticleViewer = ({ article }: ArticleViewerProps) => {
             </a>
           </li>
         </ul>
-        
+
         <div className="mt-8">
           <h2 className="text-xl font-bold">Comments</h2>
           <div className="mt-4">
-            {comments.data
-              ? comments.data.comments.map((comment) => (
-                  <div key={comment} className="flex flex-col space-y-2">
-                    <div className="flex items-center space-x-4">
-                      <p className="text-light text-gray-400">{comment}</p>
-                    </div>
-                  </div>
-                ))
-              : "Loading tRPC query..."}
+            <Table
+              sx={{
+                minWidth: 750,
+              }}
+              aria-labelledby="tableTitle"
+              size={"small"}
+            >
+              <TableBody>
+                {comments.data
+                  ? comments.data.comments.map((comment: string) => (
+                      <TableRow key={comment}>
+                        <TableCell
+                          padding="checkbox"
+                          className="block text-sm font-medium text-gray-700 dark:text-gray-400"
+                        >
+                          {comment}
+                        </TableCell>
+                      </TableRow>
+                    ))
+                  : "Loading comments..."}
+              </TableBody>
+            </Table>
           </div>
         </div>
       </section>

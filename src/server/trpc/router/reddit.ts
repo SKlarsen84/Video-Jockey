@@ -45,7 +45,7 @@ export const redditRouter = router({
 
       const comms = await redditReader
         .getSubmission(input)
-        .expandReplies({ limit: 25, depth: 1 })
+        .expandReplies({ limit: 125, depth: 1 })
         .then((o) => o.comments);
       const comments = comms.map((c) => c.body);
 

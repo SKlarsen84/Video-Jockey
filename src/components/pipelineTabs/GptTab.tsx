@@ -11,7 +11,7 @@ interface Props {
 export const GptTab = ({ editableVideo, setEditableVideo }: Props) => {
   const [busy, setBusy] = useState<boolean>(false);
   const saveMutation = trpc.video.updateVideo.useMutation();
-  const [gscript, setScript] = useState<string | undefined>();
+  const [gscript] = useState<string | undefined>();
   const gptScript = trpc.gpt.getScript.useQuery(
     {
       title: editableVideo.title as string,
@@ -24,16 +24,13 @@ export const GptTab = ({ editableVideo, setEditableVideo }: Props) => {
 
   useEffect(() => {
     if (gptScript.data?.script) {
-      setScript(gptScript.data?.script.script as string);
+      setEditableVideo({
+        ...editableVideo,
+        script: gptScript.data?.script.script as string,
+      });
     }
-    if (!gptScript.data?.script) {
-      if (editableVideo.script) {
-        setScript(editableVideo.script as string);
-      } else {
-        setScript("No script created yet");
-      }
-    }
-  }, [gptScript.data?.script, editableVideo.script]);
+    
+  }, [gptScript.data?.script]);
 
   useEffect(() => {
     const script = gptScript.data?.script.script as string;
@@ -62,6 +59,8 @@ export const GptTab = ({ editableVideo, setEditableVideo }: Props) => {
         reddit_content: string;
         script: string;
       },
+      status: "script added",
+      status_step: 2,
     });
     setBusy(false);
   };
@@ -76,15 +75,20 @@ export const GptTab = ({ editableVideo, setEditableVideo }: Props) => {
           GPT script
         </label>
 
-        <textarea
-          name="gptScript"
-          id="gpt"
-          className="block h-[26rem]  w-full w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
-          placeholder={gscript as string}
-          value={gscript as string}
-          onChange={handleScriptChange}
-          required
-        />
+        {gptScript.isFetching && (
+          <CircularProgress size={24} className="mr-2" />
+        )}
+        {!gptScript.isFetching && (
+          <textarea
+            name="gptScript"
+            id="gpt"
+            className="block h-[26rem]  w-full w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+            placeholder={gscript as string}
+            value={editableVideo.script as string}
+            onChange={handleScriptChange}
+            required
+          />
+        )}
       </div>
       <div className="mt-6 mb-6 flex justify-end">
         {busy ? (
