@@ -122,7 +122,7 @@ export const FootageTab = ({ editableVideo, setEditableVideo }: Props) => {
         >
           Search for footage on youtube
         </label>
-        <div className="relative w-2/5">
+        <div className="relative w-5/5">
           <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
             <svg
               aria-hidden="true"

@@ -34,9 +34,7 @@ export const MenuBar = ({
           className="mb-4 w-16 rounded-2xl border bg-gray-900 p-4 text-white"
         >
           Vids
-          {/* <span className="absolute -top-2 -right-2 flex h-6 w-6 items-center justify-center rounded-full bg-red-600 p-2 text-white">
-            3
-          </span> */}
+
         </a>
         <a
           href="#"
@@ -48,15 +46,6 @@ export const MenuBar = ({
           Rdit
         </a>
       </nav>
-      {/* <a
-        href="#"
-        onClick={() => {
-          setNavigationPanel(1);
-        }} //set navigationpanel to 1
-        className="mx-auto mt-12 mb-20 w-16 rounded-2xl bg-green-600 p-4 text-white"
-      >
-        <PlusIcon className="text-white-500 h-8 w-8" />
-      </a> */}
     </section>
   );
 };

@@ -10,7 +10,7 @@ export const VideoList = ({ selectedVideo, setSelectedVideo }: Props) => {
   const allVideos = trpc.video.getAll.useQuery();
 
   return (
-    <section className="w-12/12 flex  flex-col overflow-y-scroll bg-gray-50 pt-3  dark:bg-gray-700">
+    <section className="w-4/12 flex  flex-col overflow-y-scroll bg-gray-50 pt-3  dark:bg-gray-700 p-6">
    
       <label className="px-3">
         <input
@@ -25,7 +25,7 @@ export const VideoList = ({ selectedVideo, setSelectedVideo }: Props) => {
                 key={video.id}
                 href="#"
                 onClick={() => setSelectedVideo(video)}
-                className="m-2 block max-w-sm rounded-lg border border-gray-200 bg-white p-6 shadow-md hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+                className="m-2 block rounded-lg border border-gray-200 bg-white p-6 shadow-md hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
               >
                 <p className="text-1xl mb-2 font-bold tracking-tight text-gray-900 dark:text-white">
                   {video.title}

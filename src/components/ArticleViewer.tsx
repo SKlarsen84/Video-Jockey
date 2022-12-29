@@ -33,7 +33,7 @@ export const ArticleViewer = ({ article }: ArticleViewerProps) => {
   }, [article, isAdding, addVidMutation, comments.data]);
 
   return (
-    <section className="flex h-full w-full flex-col rounded-r-3xl bg-white px-4 dark:bg-gray-800">
+    <section className="flex w-full flex-col rounded-r-3xl bg-white px-4 dark:bg-gray-800">
       <div className="mb-8 flex h-48 items-center justify-between border-b-2">
         <div className="flex items-center space-x-4">
           <p className="text-light text-gray-400">

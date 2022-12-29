@@ -16,7 +16,7 @@ export const RedditReader = ({
   });
 
   return (
-    <section className="w-12/12 flex h-full flex-col overflow-y-scroll bg-gray-50 pt-3  dark:bg-gray-700">
+    <section className="flex h-full w-4/12 flex-col overflow-y-scroll bg-gray-50 p-6  pt-3 dark:bg-gray-700">
       <label className="px-3">
         <input
           className="w-full rounded-lg bg-gray-100 p-4 transition duration-200 focus:outline-none focus:ring-2"
@@ -29,7 +29,7 @@ export const RedditReader = ({
             <a
               key={article.id}
               href="#"
-              className="m-2 block max-w-sm rounded-lg border border-gray-200 bg-white p-6 shadow-md hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+              className="m-2 block rounded-lg border border-gray-200 bg-white p-6 shadow-md hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
               onClick={() => setSelectedArticle(article)}
             >
               <p className="text-1xl mb-2 font-bold tracking-tight text-gray-900 dark:text-white">
