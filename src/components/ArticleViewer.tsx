@@ -72,7 +72,7 @@ export const ArticleViewer = ({ article }: ArticleViewerProps) => {
             >
               <TableBody>
                 {comments.data
-                  ? comments.data.comments.map((comment: string) => (
+                  ? comments.data.entries.map((comment: string) => (
                       <TableRow key={comment}>
                         <TableCell
                           padding="checkbox"

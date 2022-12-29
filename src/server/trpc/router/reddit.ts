@@ -43,14 +43,33 @@ export const redditRouter = router({
         userAgent: process.env.REDDIT_USER_AGENT as string,
       });
 
+      const entries: string[] = [];
+
+      //recursive function to get all replies
+
+      const getReplies = (comment: { body?: any; replies?: any }) => {
+        if (comment.replies.length > 0) {
+          comment.replies.forEach((reply: { body: any }) => {
+            entries.push(reply.body);
+            getReplies(reply);
+          });
+        }
+      };
+
       const comms = await redditReader
         .getSubmission(input)
-        .expandReplies({ limit: 125, depth: 1 })
+        .expandReplies({ limit: Infinity, depth: Infinity })
         .then((o) => o.comments);
-      const comments = comms.map((c) => c.body);
 
+      //get all replies for all comms
+      comms.forEach((comment: { body: any; replies: any }) => {
+        entries.push(comment.body);
+        getReplies(comment);
+      });
+
+      console.log(entries);
       return {
-        comments,
+        entries,
       };
     }),
   // getAll: publicProcedure.query(({ ctx }) => {
