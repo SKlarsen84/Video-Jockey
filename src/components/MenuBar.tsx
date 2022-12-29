@@ -31,9 +31,9 @@ export const MenuBar = ({
           onClick={() => {
             setNavigationPanel(0);
           }} //set navigationpanel to 0
-          className="relative mb-4 w-16 rounded-2xl bg-purple-100 p-4 text-purple-900"
+          className="mb-4 w-16 rounded-2xl border bg-gray-900 p-4 text-white"
         >
-          <VideoCameraIcon className="text-white-500h-8 w-8" />
+          Vids
           {/* <span className="absolute -top-2 -right-2 flex h-6 w-6 items-center justify-center rounded-full bg-red-600 p-2 text-white">
             3
           </span> */}
@@ -43,7 +43,7 @@ export const MenuBar = ({
           onClick={() => {
             setNavigationPanel(1);
           }} //set navigationpanel to 1
-          className="mb-4 w-16 rounded-2xl border p-4 text-white"
+          className="mb-4 w-16 rounded-2xl border bg-gray-900 p-4 text-white"
         >
           Rdit
         </a>
