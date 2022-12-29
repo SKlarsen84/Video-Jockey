@@ -31,6 +31,9 @@ export const videoRouter = router({
       const video = await ctx.prisma.video.create({
         data: {
           ...input.video,
+          script: '',
+          status: 'reddit added',
+          status_step: 1
         },
       });
       return video;
@@ -62,6 +65,7 @@ export const videoRouter = router({
           reddit_id: z.string(),
           reddit_title: z.string(),
           reddit_content: z.string(),
+          script: z.string()
         }),
       })
     )
@@ -72,6 +76,8 @@ export const videoRouter = router({
         },
         data: {
           ...input.video,
+          status: 'script added',
+          status_step: 2
         },
       });
       return video;
