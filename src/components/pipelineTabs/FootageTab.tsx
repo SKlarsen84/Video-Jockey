@@ -11,7 +11,6 @@ interface Props {
 }
 
 export const FootageTab = ({ editableVideo, setEditableVideo }: Props) => {
-  const [busy, setBusy] = useState<boolean>(false);
   const [search, setSearch] = useState<string>(editableVideo.title || "");
 
   const saveMutation = trpc.video.updateVideo.useMutation();
@@ -33,7 +32,6 @@ export const FootageTab = ({ editableVideo, setEditableVideo }: Props) => {
 
   const addFootage = async (url: string) => {
     const vid = { ...editableVideo, youtube_url: url };
-    setBusy(true);
     await saveMutation.mutateAsync({
       video: vid as {
         id: string;
@@ -54,7 +52,6 @@ export const FootageTab = ({ editableVideo, setEditableVideo }: Props) => {
       status: "footage added",
       status_step: 3,
     });
-    setBusy(false);
   };
 
   const changeSearchValue = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -122,7 +119,7 @@ export const FootageTab = ({ editableVideo, setEditableVideo }: Props) => {
         >
           Search for footage on youtube
         </label>
-        <div className="relative w-5/5">
+        <div className="w-5/5 relative">
           <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
             <svg
               aria-hidden="true"
