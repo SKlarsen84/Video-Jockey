@@ -160,7 +160,7 @@ export const FootageTab = ({ editableVideo, setEditableVideo }: Props) => {
       </form>
 
       <div className="mt-12">
-        <div className="grid grid-cols-3 gap-6 sm:grid-cols-1 lg:grid-cols-3">
+        <div className="grid grid-cols-2 gap-6 sm:grid-cols-1 lg:grid-cols-2">
           {searchResults.isFetching ? (
             <CircularProgress size={24} className="mr-2" />
           ) : (
