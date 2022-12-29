@@ -27,7 +27,6 @@ export async function gptWriteRecap(
   const recap = result.response;
 
   return {
-    script: `
-  ${recap}  `,
+    script: recap,
   };
 }

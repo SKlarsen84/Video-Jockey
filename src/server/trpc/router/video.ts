@@ -65,10 +65,11 @@ export const videoRouter = router({
           reddit_id: z.string(),
           reddit_title: z.string(),
           reddit_content: z.string(),
-          script: z.string().nullish()
+          script: z.string().nullish(),
+          youtube_url: z.string().nullish()
         }),
-        status: z.string(),
-        status_step: z.number()
+        status: z.string().nullish(),
+        status_step: z.number().nullish()
       })
     )
     .mutation(async ({ ctx, input }) => {

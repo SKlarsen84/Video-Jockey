@@ -11,16 +11,16 @@ interface Props {
 export const GptTab = ({ editableVideo, setEditableVideo }: Props) => {
   const [busy, setBusy] = useState<boolean>(false);
   const saveMutation = trpc.video.updateVideo.useMutation();
-  const [gscript] = useState<string | undefined>();
   const gptScript = trpc.gpt.getScript.useQuery(
     {
       title: editableVideo.title as string,
       comments: JSON.parse(editableVideo.reddit_comments as string)
-        .comments as string[],
+        .entries.slice(0,30) as string[],
       content: editableVideo.reddit_content as string,
     },
     { enabled: false }
   );
+
 
   useEffect(() => {
     if (gptScript.data?.script) {
@@ -33,8 +33,14 @@ export const GptTab = ({ editableVideo, setEditableVideo }: Props) => {
   }, [gptScript.data?.script]);
 
   useEffect(() => {
-    const script = gptScript.data?.script.script as string;
-    setEditableVideo({ ...editableVideo, script });
+    if (gptScript.data?.script) {
+      setEditableVideo({
+        ...editableVideo,
+        script: gptScript.data?.script.script as string,
+      });
+    }
+
+    
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [gptScript.data?.script]);
 
@@ -79,15 +85,17 @@ export const GptTab = ({ editableVideo, setEditableVideo }: Props) => {
           <CircularProgress size={24} className="mr-2" />
         )}
         {!gptScript.isFetching && (
+          <>
           <textarea
             name="gptScript"
             id="gpt"
             className="block h-[26rem]  w-full w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
-            placeholder={gscript as string}
+ 
             value={editableVideo.script as string}
             onChange={handleScriptChange}
             required
           />
+          </>
         )}
       </div>
       <div className="mt-6 mb-6 flex justify-end">

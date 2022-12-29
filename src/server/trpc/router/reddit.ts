@@ -67,7 +67,6 @@ export const redditRouter = router({
         getReplies(comment);
       });
 
-      console.log(entries);
       return {
         entries,
       };

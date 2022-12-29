@@ -6,6 +6,7 @@ import type { Video } from "@prisma/client";
 import { Tab, Tabs } from "@mui/material";
 import { RedditTab } from "./pipelineTabs/RedditTab";
 import { GptTab } from "./pipelineTabs/GptTab";
+import { FootageTab } from "./pipelineTabs/FootageTab";
 
 interface VideoViewerProps {
   video: Video;
@@ -21,10 +22,11 @@ export const VideoPipelineViewer = ({
   const [activeTab, setActiveTab] = useState<number>(0);
   const [commentsArray, setCommentsArray] = useState<string[]>([]);
   const deleteMutation = trpc.video.removeVideo.useMutation();
+  const saveMutation = trpc.video.updateVideo.useMutation();
 
   useEffect(() => {
     setCommentsArray(
-      (JSON.parse(video?.reddit_comments as string).comments as string[]) || []
+      (JSON.parse(video?.reddit_comments as string).entries as string[]) || []
     );
   }, [video]);
 
@@ -44,6 +46,16 @@ export const VideoPipelineViewer = ({
 
   const handleTitleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEditableVideo({ ...editableVideo, title: e.target.value });
+    saveMutation.mutate({
+      video: {
+        id: editableVideo.id,
+        title: e.target.value,
+        reddit_id: editableVideo.reddit_id as string,
+        reddit_title: editableVideo.reddit_title as string,
+        reddit_content: editableVideo.reddit_content as string,
+        script: editableVideo.script,
+      },
+    });
   };
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
@@ -112,6 +124,13 @@ export const VideoPipelineViewer = ({
         )}
         {activeTab === 1 && (
           <GptTab
+            editableVideo={editableVideo}
+            setEditableVideo={setEditableVideo}
+          />
+        )}
+
+        {activeTab === 2 && (
+          <FootageTab
             editableVideo={editableVideo}
             setEditableVideo={setEditableVideo}
           />
