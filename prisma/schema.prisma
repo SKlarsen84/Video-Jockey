@@ -26,6 +26,7 @@ model Video {
   status_step Int?
   status String?
   youtube_url String?
+  thumbnail_base64 String?
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
 }

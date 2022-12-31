@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { CircularProgress } from "@mui/material";
 import type { Video } from "@prisma/client";
+import Jimp from "jimp/*";
 import Image from "next/image";
 import { useState } from "react";
 import { trpc } from "../../utils/trpc";
@@ -12,8 +13,9 @@ interface Props {
 
 export const FootageTab = ({ editableVideo, setEditableVideo }: Props) => {
   const [search, setSearch] = useState<string>(editableVideo.title || "");
-
+  const [thumbnailBuffer, setThumbnailBuffer] = useState<any>();
   const saveMutation = trpc.video.updateVideo.useMutation();
+  const thumbnailMutation = trpc.youtube.generateThumbnail.useMutation();
 
   const searchResults = trpc.youtube.searchYoutube.useQuery(search, {
     enabled: false,
@@ -62,54 +64,101 @@ export const FootageTab = ({ editableVideo, setEditableVideo }: Props) => {
     searchResults.refetch();
   };
 
+  const thumbnailGenerator = async (url: string) => {
+    const img = await thumbnailMutation.mutateAsync(url);
+    console.log("got img");
+    console.log(img);
+    setThumbnailBuffer(img);
+  };
+
   return (
     <div className="mt-12">
       <div className="mt-12">
-        {/* //if there is a youtube url for this video, show the video */}
-        {resultForYoutubeUrl.isFetching ? (
-          <CircularProgress size={24} className="mr-2" />
-        ) : (
-          <>
-            {resultForYoutubeUrl.data?.youtubeResults.items.map((item) => (
+        <div className="mt-12">
+          <div className="grid grid-cols-2 gap-6 sm:grid-cols-1 lg:grid-cols-2">
+            {resultForYoutubeUrl &&
+              resultForYoutubeUrl.data?.youtubeResults &&
+              resultForYoutubeUrl.data.youtubeResults.items.length > 0 &&
+              resultForYoutubeUrl.data?.youtubeResults?.items[0]?.type ===
+                "video" && (
+                <div className="mb-2 mt-4 text-sm font-medium text-gray-900 dark:text-white">
+                  <button
+                    className="rounded bg-blue-500 py-2 px-4 font-bold text-white hover:bg-blue-700"
+                    onClick={() =>
+                      thumbnailGenerator(
+                        (resultForYoutubeUrl as any).data?.youtubeResults
+                          ?.items[0]?.thumbnails[0].url
+                      )
+                    }
+                  >
+                    Run thumbnailGenerator
+                  </button>
+
+                  {thumbnailBuffer && (
+                    <>
+                      <div className="mt-12">
+                        <div className="mb-2 mt-4 text-sm font-medium text-gray-900 dark:text-white">
+                          generated thumbnail:
+                        </div>
+                        <div className="mt-6 mb-6 flex justify-start">
+                          <Image
+                            className="h-30 w-120 flex-shrink-0  bg-gray-300 dark:bg-gray-700"
+                            src={thumbnailBuffer.image}
+                            alt=""
+                            width={344}
+                            height={344}
+                            title="thumbnail"
+                          />
+                        </div>
+                      </div>
+                    </>
+                  )}
+                </div>
+              )}
+
+            {/* //if there is a youtube url for this video, show the video */}
+            {resultForYoutubeUrl.isFetching ? (
+              <CircularProgress size={24} className="mr-2" />
+            ) : (
               <>
-                {item.type === "video" && (
+                {resultForYoutubeUrl.data?.youtubeResults.items.map((item) => (
                   <>
-                    <div className="mb-2 mt-4 text-sm font-medium text-gray-900 dark:text-white">
-                      Currently used footage
-                    </div>
+                    {item.type === "video" && (
+                      <>
+                        {/* //if this video is currently the video used by the editableVideo, then show the checkmark in the top right corner */}
+                        <div className="mt-12">
+                          <div className="mb-2 mt-4 text-sm font-medium text-gray-900 dark:text-white">
+                            Currently used footage
+                          </div>
+                          <a
+                            href={`https://www.youtube.com/watch?v=${item.id}`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <Image
+                              className="h-30 w-120 flex-shrink-0  bg-gray-300 dark:bg-gray-700"
+                              src={item.thumbnails[0]?.url || ""}
+                              alt=""
+                              width={1280}
+                              height={720}
+                              title={item.title}
+                            />
+                          </a>
+                          <span className="text-sm font-medium text-gray-900 dark:text-white">
+                            {item.title}
+                          </span>
+                        </div>
+                       
+                         
 
-                    {/* //if this video is currently the video used by the editableVideo, then show the checkmark in the top right corner */}
-                    <div className="mt-6 mb-6 flex justify-start">
-                      <a
-                        href={`https://www.youtube.com/watch?v=${item.id}`}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <Image
-                          className="h-30 w-120 flex-shrink-0  bg-gray-300 dark:bg-gray-700"
-                          src={item.thumbnails[0]?.url || ""}
-                          alt=""
-                          width={344}
-                          height={344}
-                          title={item.title}
-                        />
-                      </a>
-                    </div>
-                    <div className="ml-4">
-                      <div className="text-sm font-medium text-gray-900 dark:text-white">
-                        {item.title}
-                      </div>
-
-                      <div className="text-sm font-medium text-gray-900 dark:text-white">
-                        {item.duration}
-                      </div>
-                    </div>
+                      </>
+                    )}
                   </>
-                )}
+                ))}
               </>
-            ))}
-          </>
-        )}
+            )}
+          </div>
+        </div>
       </div>
 
       <form className=" mt-12">
