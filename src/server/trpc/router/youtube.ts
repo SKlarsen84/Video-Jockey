@@ -13,10 +13,10 @@ export const youtubeRouter = router({
   }),
 
   generateThumbnail: publicProcedure
-    .input(z.string())
-    .mutation(async ({ input }) => {
+    .input(z.object({ image: z.string(), fileName: z.string() }))
+    .mutation(async ({input}) => {
       console.log(input);
-      const image = await imageOverlay(input);
+      const image = await imageOverlay(input.image, input.fileName);
       return {
         image,
       };

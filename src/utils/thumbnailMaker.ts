@@ -1,6 +1,6 @@
 import Jimp from "jimp";
 
-export async function imageOverlay(imageUrl: string) {
+export async function imageOverlay(imageUrl: string, fileName: string) {
   // Function name is same as of file
   // Reading watermark Image
   let watermark = await Jimp.read("./logo-tp.png");
@@ -18,6 +18,6 @@ export async function imageOverlay(imageUrl: string) {
 
 //   const font = await Jimp.loadFont(Jimp.FONT_SANS_64_WHITE);
 //   image.print(font, 0, 0, overlayText, 1280 / 3);
-  await image.writeAsync("newImage.png");
+  await image.writeAsync(fileName+".png");
   return image.getBase64Async(Jimp.MIME_PNG);
 }

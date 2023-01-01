@@ -96,7 +96,10 @@ export const FootageTab = ({ editableVideo, setEditableVideo }: Props) => {
   }, [resultForYoutubeUrl, thumbnailUrl]);
 
   const thumbnailGenerator = async () => {
-    const img = await thumbnailMutation.mutateAsync(thumbnailUrl as string);
+    const img = await thumbnailMutation.mutateAsync({
+      image: thumbnailUrl as string,
+      fileName: editableVideo.id,
+    });
     setThumbnailBuffer(img);
 
     const vid = { ...editableVideo, thumbnail_base64: img.image };
