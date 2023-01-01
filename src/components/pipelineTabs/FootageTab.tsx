@@ -3,6 +3,7 @@ import { CircularProgress } from "@mui/material";
 import type { Video } from "@prisma/client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import ytsr from "ytsr";
 import { trpc } from "../../utils/trpc";
 
 interface Props {
@@ -21,6 +22,8 @@ export const FootageTab = ({ editableVideo, setEditableVideo }: Props) => {
     enabled: false,
     refetchOnWindowFocus: false,
   });
+
+  const downloadVideo = trpc.youtube.downloadVideo.useMutation();
 
   const resultForYoutubeUrl = trpc.youtube.searchYoutube.useQuery(
     editableVideo.youtube_url as string,
@@ -71,19 +74,20 @@ export const FootageTab = ({ editableVideo, setEditableVideo }: Props) => {
   useEffect(() => {
     const run = async () => {
       setSearch(editableVideo.title || "");
-      setThumbnailBuffer(editableVideo.thumbnail_base64);
+      setThumbnailBuffer({ image: editableVideo.thumbnail_base64 });
     };
 
-    if (editableVideo && editableVideo.thumbnail_base64) {
+    if (editableVideo && editableVideo.thumbnail_base64 && !thumbnailBuffer) {
       run();
     }
-  }, [editableVideo]);
+  }, [editableVideo, thumbnailBuffer]);
 
   useEffect(() => {
     if (
       (resultForYoutubeUrl as any).data?.youtubeResults?.items[0]?.thumbnails[0]
-        .url
-    && !thumbnailUrl ) {
+        .url &&
+      !thumbnailUrl
+    ) {
       setThumbnailUrl(
         (resultForYoutubeUrl as any).data?.youtubeResults?.items[0]
           ?.thumbnails[0].url
@@ -94,6 +98,38 @@ export const FootageTab = ({ editableVideo, setEditableVideo }: Props) => {
   const thumbnailGenerator = async () => {
     const img = await thumbnailMutation.mutateAsync(thumbnailUrl as string);
     setThumbnailBuffer(img);
+
+    const vid = { ...editableVideo, thumbnail_base64: img.image };
+    await saveMutation.mutateAsync({
+      video: vid as {
+        id: string;
+        title: string;
+        reddit_id: string;
+        reddit_title: string;
+        reddit_content: string;
+        script: string;
+        reddit_comments: string;
+        youtube_url: string;
+        thumbnail_base64: string;
+      },
+      status: editableVideo.status + ", thumbnail added",
+      status_step: 2,
+    });
+  };
+
+  const downloadVideoFromYoutube = async () => {
+    const vid = { ...editableVideo };
+    if (vid.id && vid.youtube_url) {
+      const dlResult = await downloadVideo.mutateAsync({
+        url: vid.youtube_url as string,
+        path: vid.id + ".mp4",
+      });
+      if (dlResult) {
+        dlResult.dlStatus === 200
+          ? alert("Video downloaded successfully")
+          : alert("Video download failed");
+      }
+    }
   };
 
   return (
@@ -190,6 +226,14 @@ export const FootageTab = ({ editableVideo, setEditableVideo }: Props) => {
                           <span className="text-sm font-medium text-gray-900 dark:text-white">
                             {item.title}
                           </span>
+                          <button
+                            type="submit"
+                            className="right-2.5 bottom-2.5 rounded-lg bg-blue-700 px-4 py-2 text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                            onClick={downloadVideoFromYoutube}
+                            disabled={editableVideo.youtube_url === undefined}
+                          >
+                            download vid
+                          </button>
                         </div>
                       </>
                     )}

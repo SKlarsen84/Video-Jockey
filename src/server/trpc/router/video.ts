@@ -66,7 +66,8 @@ export const videoRouter = router({
           reddit_title: z.string(),
           reddit_content: z.string(),
           script: z.string().nullish(),
-          youtube_url: z.string().nullish()
+          youtube_url: z.string().nullish(),
+          thumbnail_base64: z.string().nullish(),
         }),
         status: z.string().nullish(),
         status_step: z.number().nullish()
