@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { CircularProgress } from "@mui/material";
 import type { Video } from "@prisma/client";
-import Jimp from "jimp/*";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { trpc } from "../../utils/trpc";
@@ -72,16 +71,25 @@ export const FootageTab = ({ editableVideo, setEditableVideo }: Props) => {
   useEffect(() => {
     const run = async () => {
       setSearch(editableVideo.title || "");
-
-      const img = await Jimp.read(editableVideo.thumbnail_base64 as string);
-      const imgBuffer = await img.getBufferAsync(Jimp.MIME_PNG);
-      setThumbnailBuffer(imgBuffer);
+      setThumbnailBuffer(editableVideo.thumbnail_base64);
     };
 
     if (editableVideo && editableVideo.thumbnail_base64) {
       run();
     }
   }, [editableVideo]);
+
+  useEffect(() => {
+    if (
+      (resultForYoutubeUrl as any).data?.youtubeResults?.items[0]?.thumbnails[0]
+        .url
+    && !thumbnailUrl ) {
+      setThumbnailUrl(
+        (resultForYoutubeUrl as any).data?.youtubeResults?.items[0]
+          ?.thumbnails[0].url
+      );
+    }
+  }, [resultForYoutubeUrl, thumbnailUrl]);
 
   const thumbnailGenerator = async () => {
     const img = await thumbnailMutation.mutateAsync(thumbnailUrl as string);
@@ -92,6 +100,36 @@ export const FootageTab = ({ editableVideo, setEditableVideo }: Props) => {
     <div className="mt-12">
       <div className="mt-12">
         <div className="mt-12">
+          <form className=" mt-12">
+            <label
+              htmlFor="default-search"
+              className="mb-2 mt-4 text-sm font-medium text-gray-900 dark:text-white"
+            >
+              Thumbnail image URL
+            </label>
+            <div className="w-5/5 relative">
+              <input
+                type="search"
+                id="default-search"
+                className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-4 pl-4 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                placeholder={
+                  (resultForYoutubeUrl as any).data?.youtubeResults?.items[0]
+                    ?.thumbnails[0].url
+                }
+                value={thumbnailUrl}
+                onChange={changeThumbnailUrl}
+                required
+              />
+              <button
+                type="submit"
+                className="absolute right-2.5 bottom-2.5 rounded-lg bg-blue-700 px-4 py-2 text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                onClick={thumbnailGenerator}
+                disabled={thumbnailUrl === undefined}
+              >
+                create thumbnail
+              </button>
+            </div>
+          </form>
           <div className="grid grid-cols-2 gap-6 sm:grid-cols-1 lg:grid-cols-2">
             {resultForYoutubeUrl &&
               resultForYoutubeUrl.data?.youtubeResults &&
@@ -99,37 +137,6 @@ export const FootageTab = ({ editableVideo, setEditableVideo }: Props) => {
               resultForYoutubeUrl.data?.youtubeResults?.items[0]?.type ===
                 "video" && (
                 <div className="mb-2 mt-4 text-sm font-medium text-gray-900 dark:text-white">
-                  <form className=" mt-12">
-                    <label
-                      htmlFor="default-search"
-                      className="mb-2 mt-4 text-sm font-medium text-gray-900 dark:text-white"
-                    >
-                      image URL
-                    </label>
-                    <div className="w-5/5 relative">
-                      <input
-                        type="search"
-                        id="default-search"
-                        className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-4 pl-4 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
-                        placeholder={
-                          (resultForYoutubeUrl as any).data?.youtubeResults
-                            ?.items[0]?.thumbnails[0].url
-                        }
-                        value={thumbnailUrl}
-                        onChange={changeThumbnailUrl}
-                        required
-                      />
-                      <button
-                        type="submit"
-                        className="absolute right-2.5 bottom-2.5 rounded-lg bg-blue-700 px-4 py-2 text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                        onClick={thumbnailGenerator}
-                        disabled={thumbnailUrl === undefined}
-                      >
-                        Search
-                      </button>
-                    </div>
-                  </form>
-
                   {thumbnailBuffer && (
                     <>
                       <div className="mt-12">
