@@ -1,0 +1,336 @@
+{
+    "audio": {
+      "selectedTrackId": "2530",
+      "selectedTrackName": "Discoteque",
+      "selectedTrackUrl": "https://tracks.melod.ie/track_versions/14491/MEL345_10_1_Discoteque_%28Full%29_SMINK.mp3?1632618601",
+      "selectedTrackType": "melodie",
+      "selectedVoiceOverCategory": "UK English",
+      "selectedVoiceOverTrack": "Chris, male",
+      "selectedVoiceOverTrackUrl": "https://dhwyjedqg9b7u.cloudfront.net/google/samples/en-GB-Wavenet-B_MALE.mp3",
+      "selectedVoiceOverTrackId": 1035,
+      "voiceOverTextSpeed": 100
+    },
+    "scenes": [
+      {
+        "sceneId": "Custom Intro Scene",
+        "sentence": "",
+        "backColor": "rgba(255,255,255,1)",
+        "image": "https://brand-settings-images130431-pictory.s3.us-east-2.amazonaws.com/public/Google_105776957074533560762/videos/bb0b9239-8e64-4a82-b221-19141b734a0b.mp4",
+        "lines": [
+          {
+            "subSceneId": 1,
+            "time": 1,
+            "text": "",
+            "html": "",
+            "format": {
+              "hideText": false,
+              "fontName": "Lato-Bold",
+              "fontSize": 32,
+              "fontColor": "rgb(255,255,255)",
+              "textBackgroundColor": "rgba(127,127,127,0.5)",
+              "keywordColor": "rgb(255,242,204)",
+              "textAlign": "left",
+              "preset": "bottom-left",
+              "FontNameForFront": "Lato; font-weight: bold"
+            }
+          }
+        ],
+        "showLogo": true,
+        "imageMetadata": "{\"description\":\"Couple of gamers playing first person shooter videogame\",\"duration\":15,\"id\":11083488,\"keyword\":\"gamers\",\"large\":null,\"library\":\"story_blocks\",\"media_type\":\"video\",\"preview\":\"https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/BgrICs-NZj4hksnn3/videoblocks-couple-of-gamers-playing-first-person-shooter-videogame_hv8ruemrd__fe37657be8fc3358c6053938b3e4fbe3__P480.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1672691489104&publicKey=NFKFzias7JkF35W3n9edUuQV1Rnn7udTDco3ZbvzlsXgiAzLXO0a15shkgbMNmXZ&organizationId=103776&apiVersion=2.0&stockItemId=11083488&resolution=480p&endUserId=718890439cf9899e412f4e3d6c8148c452fb5959&projectId=dev&searchId=c19f15d9-bbe7-416d-9878-903c18689e18&searchPageId=545a079c-6405-409a-b61e-59f7824e8679\",\"preview_jpg\":\"https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/BgrICs-NZj4hksnn3/videoblocks-couple-of-gamers-playing-first-person-shooter-videogame_hv8ruemrd_thumbnail-180_01.jpg\",\"rank\":0.5355399496115548,\"thumb\":\"https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/BgrICs-NZj4hksnn3/videoblocks-couple-of-gamers-playing-first-person-shooter-videogame_hv8ruemrd__fe37657be8fc3358c6053938b3e4fbe3__P180.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1672691489104&publicKey=NFKFzias7JkF35W3n9edUuQV1Rnn7udTDco3ZbvzlsXgiAzLXO0a15shkgbMNmXZ&organizationId=103776&apiVersion=2.0&stockItemId=11083488&resolution=180p&endUserId=718890439cf9899e412f4e3d6c8148c452fb5959&projectId=dev&searchId=c19f15d9-bbe7-416d-9878-903c18689e18&searchPageId=545a079c-6405-409a-b61e-59f7824e8679\",\"thumb_jpg\":\"https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/BgrICs-NZj4hksnn3/videoblocks-couple-of-gamers-playing-first-person-shooter-videogame_hv8ruemrd_thumbnail-180_01.jpg\"}",
+        "transcription": false,
+        "settings": {
+          "applyHideTextToAllScene": false,
+          "videoOptions": {
+            "isCropped": true,
+            "segments": [
+              {
+                "start": 0,
+                "end": 0
+              }
+            ]
+          },
+          "voiceOver": true,
+          "applyImageZoomPanToAllScene": false,
+          "applyVoiceOverToAllScene": false,
+          "hideText": false,
+          "loopVideoAllScene": false,
+          "applyMusicToAllScene": false,
+          "music": true,
+          "imageZoomPan": true,
+          "loopVideo": true,
+          "muteClipAudioAllScene": false,
+          "muteClipAudio": true,
+          "hideScene": false
+        },
+        "subsentences": [
+          ""
+        ]
+      },
+      {
+        "sceneId": 1,
+        "sentence": "Hello <strong>gamers</strong>, We have exciting news to share with you today! Omori, the popular <strong>RPG game</strong>, has just reached a major <strong>milestone</strong> by selling over 1,000,000 copies. This news was announced on Twitter by the official Omori account and has received widespread praise and <strong>congratulations</strong> from the <strong>gaming community</strong>. While some have expressed their joy at the success of the <strong>game</strong>, others have shared their experiences as backers of the project and expressed their <strong>disappointment</strong> with the lengthy development process. Despite these challenges, Omori has proven to be a hit among <strong>players</strong>, garnering praise for its unique aesthetics, engaging story, and memorable <strong>characters</strong>. If you haven't had a <strong>chance</strong> to play Omori yet, now is a great time to check it out and see what all the <strong>fuss</strong> is about. Congratulations to the Omori <strong>team</strong> on this impressive <strong>achievement</strong>! That's <strong>all</strong> for now, stay tuned for more <strong>gaming updates</strong>.",
+        "backColor": "rgba(255,255,255,1)",
+        "image": "https://brand-settings-images130431-pictory.s3.us-east-2.amazonaws.com/public/Google_105776957074533560762/videos/bb0b9239-8e64-4a82-b221-19141b734a0b.mp4",
+        "lines": [
+          {
+            "subSceneId": 1,
+            "time": 1,
+            "text": "Hello gamers,",
+            "html": "Hello <strong>gamers</strong>,",
+            "format": {
+              "hideText": false,
+              "fontName": "Lato-Bold",
+              "fontSize": 32,
+              "fontColor": "rgb(255,255,255)",
+              "textBackgroundColor": "rgba(127,127,127,0.5)",
+              "keywordColor": "rgb(255,242,204)",
+              "textAlign": "left",
+              "preset": "bottom-left",
+              "FontNameForFront": "Lato; font-weight: bold"
+            }
+          },
+          {
+            "subSceneId": 2,
+            "time": 8,
+            "text": "We have exciting news to share with you today! Omori, the popular RPG game, has just reached a major milestone by selling over 1,000,000 copies.",
+            "html": "We have exciting news to share with you today! Omori, the popular <strong>RPG game</strong>, has just reached a major <strong>milestone</strong> by selling over 1,000,000 copies.",
+            "format": {
+              "hideText": false,
+              "fontName": "Lato-Bold",
+              "fontSize": 32,
+              "fontColor": "rgb(255,255,255)",
+              "textBackgroundColor": "rgba(127,127,127,0.5)",
+              "keywordColor": "rgb(255,242,204)",
+              "textAlign": "left",
+              "preset": "bottom-left",
+              "FontNameForFront": "Lato; font-weight: bold"
+            }
+          },
+          {
+            "subSceneId": 3,
+            "time": 7,
+            "text": "This news was announced on Twitter by the official Omori account and has received widespread praise and congratulations from the gaming community.",
+            "html": "This news was announced on Twitter by the official Omori account and has received widespread praise and <strong>congratulations</strong> from the <strong>gaming community</strong>.",
+            "format": {
+              "hideText": false,
+              "fontName": "Lato-Bold",
+              "fontSize": 32,
+              "fontColor": "rgb(255,255,255)",
+              "textBackgroundColor": "rgba(127,127,127,0.5)",
+              "keywordColor": "rgb(255,242,204)",
+              "textAlign": "left",
+              "preset": "bottom-left",
+              "FontNameForFront": "Lato; font-weight: bold"
+            }
+          },
+          {
+            "subSceneId": 4,
+            "time": 10,
+            "text": "While some have expressed their joy at the success of the game, others have shared their experiences as backers of the project and expressed their disappointment with the lengthy development process.",
+            "html": "While some have expressed their joy at the success of the <strong>game</strong>, others have shared their experiences as backers of the project and expressed their <strong>disappointment</strong> with the lengthy development process.",
+            "format": {
+              "hideText": false,
+              "fontName": "Lato-Bold",
+              "fontSize": 32,
+              "fontColor": "rgb(255,255,255)",
+              "textBackgroundColor": "rgba(127,127,127,0.5)",
+              "keywordColor": "rgb(255,242,204)",
+              "textAlign": "left",
+              "preset": "bottom-left",
+              "FontNameForFront": "Lato; font-weight: bold"
+            }
+          },
+          {
+            "subSceneId": 5,
+            "time": 8,
+            "text": "Despite these challenges, Omori has proven to be a hit among players, garnering praise for its unique aesthetics, engaging story, and memorable characters.",
+            "html": "Despite these challenges, Omori has proven to be a hit among <strong>players</strong>, garnering praise for its unique aesthetics, engaging story, and memorable <strong>characters</strong>.",
+            "format": {
+              "hideText": false,
+              "fontName": "Lato-Bold",
+              "fontSize": 32,
+              "fontColor": "rgb(255,255,255)",
+              "textBackgroundColor": "rgba(127,127,127,0.5)",
+              "keywordColor": "rgb(255,242,204)",
+              "textAlign": "left",
+              "preset": "bottom-left",
+              "FontNameForFront": "Lato; font-weight: bold"
+            }
+          },
+          {
+            "subSceneId": 6,
+            "time": 9,
+            "text": "If you haven't had a chance to play Omori yet, now is a great time to check it out and see what all the fuss is about.",
+            "html": "If you haven't had a <strong>chance</strong> to play Omori yet, now is a great time to check it out and see what all the <strong>fuss</strong> is about.",
+            "format": {
+              "hideText": false,
+              "fontName": "Lato-Bold",
+              "fontSize": 32,
+              "fontColor": "rgb(255,255,255)",
+              "textBackgroundColor": "rgba(127,127,127,0.5)",
+              "keywordColor": "rgb(255,242,204)",
+              "textAlign": "left",
+              "preset": "bottom-left",
+              "FontNameForFront": "Lato; font-weight: bold"
+            }
+          },
+          {
+            "subSceneId": 7,
+            "time": 3,
+            "text": "Congratulations to the Omori team on this impressive achievement!",
+            "html": "Congratulations to the Omori <strong>team</strong> on this impressive <strong>achievement</strong>!",
+            "format": {
+              "hideText": false,
+              "fontName": "Lato-Bold",
+              "fontSize": 32,
+              "fontColor": "rgb(255,255,255)",
+              "textBackgroundColor": "rgba(127,127,127,0.5)",
+              "keywordColor": "rgb(255,242,204)",
+              "textAlign": "left",
+              "preset": "bottom-left",
+              "FontNameForFront": "Lato; font-weight: bold"
+            }
+          },
+          {
+            "subSceneId": 8,
+            "time": 4,
+            "text": "That's all for now, stay tuned for more gaming updates.",
+            "html": "That's <strong>all</strong> for now, stay tuned for more <strong>gaming updates</strong>.",
+            "format": {
+              "hideText": false,
+              "fontName": "Lato-Bold",
+              "fontSize": 32,
+              "fontColor": "rgb(255,255,255)",
+              "textBackgroundColor": "rgba(127,127,127,0.5)",
+              "keywordColor": "rgb(255,242,204)",
+              "textAlign": "left",
+              "preset": "bottom-left",
+              "FontNameForFront": "Lato; font-weight: bold"
+            }
+          }
+        ],
+        "showLogo": false,
+        "imageMetadata": "{\"description\":\"Couple of gamers playing first person shooter videogame\",\"duration\":15,\"id\":11083488,\"keyword\":\"gamers\",\"large\":null,\"library\":\"story_blocks\",\"media_type\":\"video\",\"preview\":\"https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/BgrICs-NZj4hksnn3/videoblocks-couple-of-gamers-playing-first-person-shooter-videogame_hv8ruemrd__fe37657be8fc3358c6053938b3e4fbe3__P480.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1672691489104&publicKey=NFKFzias7JkF35W3n9edUuQV1Rnn7udTDco3ZbvzlsXgiAzLXO0a15shkgbMNmXZ&organizationId=103776&apiVersion=2.0&stockItemId=11083488&resolution=480p&endUserId=718890439cf9899e412f4e3d6c8148c452fb5959&projectId=dev&searchId=c19f15d9-bbe7-416d-9878-903c18689e18&searchPageId=545a079c-6405-409a-b61e-59f7824e8679\",\"preview_jpg\":\"https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/BgrICs-NZj4hksnn3/videoblocks-couple-of-gamers-playing-first-person-shooter-videogame_hv8ruemrd_thumbnail-180_01.jpg\",\"rank\":0.5355399496115548,\"thumb\":\"https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/BgrICs-NZj4hksnn3/videoblocks-couple-of-gamers-playing-first-person-shooter-videogame_hv8ruemrd__fe37657be8fc3358c6053938b3e4fbe3__P180.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1672691489104&publicKey=NFKFzias7JkF35W3n9edUuQV1Rnn7udTDco3ZbvzlsXgiAzLXO0a15shkgbMNmXZ&organizationId=103776&apiVersion=2.0&stockItemId=11083488&resolution=180p&endUserId=718890439cf9899e412f4e3d6c8148c452fb5959&projectId=dev&searchId=c19f15d9-bbe7-416d-9878-903c18689e18&searchPageId=545a079c-6405-409a-b61e-59f7824e8679\",\"thumb_jpg\":\"https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/BgrICs-NZj4hksnn3/videoblocks-couple-of-gamers-playing-first-person-shooter-videogame_hv8ruemrd_thumbnail-180_01.jpg\"}",
+        "transcription": false,
+        "keywords": [
+          "gamers"
+        ],
+        "settings": {
+          "applyHideTextToAllScene": false,
+          "videoOptions": {
+            "isCropped": false,
+            "segments": [
+              {
+                "start": 0,
+                "end": 0
+              }
+            ]
+          },
+          "voiceOver": true,
+          "applyImageZoomPanToAllScene": false,
+          "applyVoiceOverToAllScene": false,
+          "hideText": false,
+          "loopVideoAllScene": false,
+          "applyMusicToAllScene": false,
+          "music": true,
+          "imageZoomPan": true,
+          "loopVideo": true,
+          "muteClipAudioAllScene": false,
+          "muteClipAudio": true
+        },
+        "transcribeVideoLength": 0,
+        "subsentences": [
+          ""
+        ]
+      },
+      {
+        "sceneId": "Outro Scene",
+        "sentence": "",
+        "backColor": "rgba(255,255,255,1)",
+        "lines": [
+          {
+            "subSceneId": 1,
+            "time": 1,
+            "text": "",
+            "html": "",
+            "format": {
+              "hideText": false,
+              "fontName": "Lato-Bold",
+              "fontSize": 32,
+              "fontColor": "rgb(255,255,255)",
+              "textBackgroundColor": "rgba(127,127,127,0.5)",
+              "keywordColor": "rgb(255,242,204)",
+              "textAlign": "left",
+              "preset": "bottom-left",
+              "FontNameForFront": "Lato; font-weight: bold"
+            }
+          }
+        ],
+        "showLogo": true,
+        "transcription": false,
+        "settings": {
+          "applyHideTextToAllScene": false,
+          "videoOptions": {
+            "isCropped": true,
+            "segments": [
+              {
+                "start": 0,
+                "end": 0
+              }
+            ]
+          },
+          "voiceOver": true,
+          "applyImageZoomPanToAllScene": false,
+          "applyVoiceOverToAllScene": false,
+          "hideText": false,
+          "loopVideoAllScene": false,
+          "applyMusicToAllScene": false,
+          "music": true,
+          "imageZoomPan": true,
+          "loopVideo": true,
+          "muteClipAudioAllScene": false,
+          "muteClipAudio": true,
+          "hideScene": false
+        },
+        "subsentences": [
+          ""
+        ]
+      }
+    ],
+    "projectName": "Omori reached 1 million copies sold",
+    "projectCategory": "Omori reached 1 million copies sold",
+    "saveDate": "2023-01-02T20:54:22.915Z",
+    "animationTheme": "Animation2",
+    "scriptTxtData": "https://brand-settings-images130431-pictory.s3.us-east-2.amazonaws.com/public/Google_105776957074533560762/project/1672691483619/script.json",
+    "cognito_id": "Google_105776957074533560762",
+    "project_id": 1672691483619,
+    "timePerFrame": [
+      5,
+      5,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      5,
+      5
+    ],
+    "hasOneSubPerSentence": true,
+    "projectMetaData": {
+      "aspectRatioFontSizeFixed": true,
+      "sentencesIncludeKeywords": true
+    },
+    "aspectRatioClass": "sixteen-nine",
+    "aspectRatioValue": "facebook-newsfeed-16-9",
+    "aspectRatioFractionValue": 1.77777777778,
+    "videoResolution": "1080p",
+    "assetResponseId": "f4d01b4f-2903-4e7c-9e45-05f451b1145a",
+    "textCategory": "Games",
+    "applyToAllScenes": false,
+    "currentActiveDiv": 10,
+    "transitionId": "none",
+    "title": "Hello gamers,",
+    "source": "script",
+    "bgMusicVolPercent": 10
+  }

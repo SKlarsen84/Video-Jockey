@@ -1,0 +1,2228 @@
+1. Register video project:
+https://api.pictory.ai/projects/api/v1/projects
+{
+  "audio": {
+    "selectedTrackId": "2530",
+    "selectedTrackName": "Discoteque",
+    "selectedTrackUrl": "https://tracks.melod.ie/track_versions/14491/MEL345_10_1_Discoteque_%28Full%29_SMINK.mp3?1632618601",
+    "selectedTrackType": "melodie",
+    "selectedVoiceOverCategory": "UK English",
+    "selectedVoiceOverTrack": "Chris, male",
+    "selectedVoiceOverTrackUrl": "https://dhwyjedqg9b7u.cloudfront.net/google/samples/en-GB-Wavenet-B_MALE.mp3",
+    "selectedVoiceOverTrackId": 1035,
+    "voiceOverTextSpeed": 100
+  },
+  "scenes": [
+    {
+      "sceneId": "Custom Intro Scene",
+      "sentence": "Gaming news daily",
+      "backColor": "rgba(255,255,255,1)",
+      "image": "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/msqd2XJ/videoblocks-61f0675fc706dd187baa775c_bwrrpj0tt__1c7143bb261e3d4fc8a4d9bb286cc6a7__P480.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1671999432561&publicKey=NFKFzias7JkF35W3n9edUuQV1Rnn7udTDco3ZbvzlsXgiAzLXO0a15shkgbMNmXZ&organizationId=103776&apiVersion=2.0&stockItemId=346783247&resolution=480p&endUserId=718890439cf9899e412f4e3d6c8148c452fb5959&projectId=dev&searchId=0c5b94b3-a78a-47a1-a72e-95dbe7261b0c&searchPageId=b28ab43c-d725-440a-a796-0cb171188437",
+      "lines": [
+        {
+          "subSceneId": 1,
+          "time": 2,
+          "text": "Gaming news daily",
+          "html": "Gaming news daily",
+          "format": {
+            "hideText": false,
+            "fontName": "Poppins-Bold",
+            "fontSize": "60",
+            "case": "case-none",
+            "decoration": "decor-bold",
+            "fontColor": "rgba(168,75,245,1)",
+            "textBackgroundColor": "rgba(232,50,89,0)",
+            "textShadowColor": "rgba(242,222,222,0)",
+            "textShadowWidthFr": 0.2,
+            "keywordColor": "rgba(240,203,203,1)",
+            "textAlign": "left",
+            "preset": null,
+            "leftCoordinate": "0.00%",
+            "topCoordinate": "75.70%",
+            "paragraphWidth": "65.51%",
+            "visual": {
+              "isLogo": true,
+              "visualType": "image",
+              "fileName": "logo-tp.png",
+              "isUploadedVideo": false,
+              "position": {
+                "width": "50%",
+                "preset": "top-right"
+              },
+              "opacity": 1,
+              "visualUrl": "https://brand-settings-images130431-pictory.s3.us-east-2.amazonaws.com/public/Google_105776957074533560762/project/1672006126062/uploads/20221230204628603.png",
+              "userModified": true
+            },
+            "styleIdObj": {
+              "id": "b7f52c8f-32b2-41d5-8cca-d5041e8c8c64",
+              "scope": "global",
+              "modified": true
+            },
+            "animation": {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.5,
+                  "animation": "fade-in-slide-down"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.5,
+                  "animation": "none"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.5,
+                  "animation": "fade-in-slide-down"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.5,
+                  "animation": "none"
+                }
+              ]
+            },
+            "FontNameForFront": "Poppins; font-weight: bold"
+          },
+          "topCoordinate": "75.70%",
+          "leftCoordinate": "0.00%",
+          "paragraphWidth": "65.51%"
+        }
+      ],
+      "showLogo": true,
+      "transcription": false,
+      "settings": {
+        "applyHideTextToAllScene": false,
+        "videoOptions": {
+          "isCropped": true,
+          "segments": [
+            {
+              "start": 0,
+              "end": 0
+            }
+          ]
+        },
+        "voiceOver": true,
+        "applyImageZoomPanToAllScene": false,
+        "applyVoiceOverToAllScene": false,
+        "hideText": false,
+        "loopVideoAllScene": false,
+        "applyMusicToAllScene": false,
+        "music": true,
+        "imageZoomPan": true,
+        "loopVideo": true,
+        "muteClipAudioAllScene": false,
+        "muteClipAudio": true,
+        "hideScene": false
+      },
+      "subsentences": [
+        ""
+      ]
+    },
+    {
+      "sceneId": 1,
+      "sentence": "Hello <strong>gamers</strong>, We have exciting news to share with you today! Omori, the popular <strong>RPG game</strong>, has just reached a major <strong>milestone</strong> by selling over 1,000,000 copies. This news was announced on Twitter by the official Omori account and has received widespread praise and <strong>congratulations</strong> from the <strong>gaming community</strong>. While some have expressed their joy at the success of the <strong>game</strong>, others have shared their experiences as backers of the project and expressed their <strong>disappointment</strong> with the lengthy development process. Despite these challenges, Omori has proven to be a hit among <strong>players</strong>, garnering praise for its unique aesthetics, engaging story, and memorable <strong>characters</strong>. If you haven't had a <strong>chance</strong> to play Omori yet, now is a great time to check it out and see what all the <strong>fuss</strong> is about. Congratulations to the Omori <strong>team</strong> on this impressive <strong>achievement</strong>! That's <strong>all</strong> for now, stay tuned for more <strong>gaming updates</strong>.",
+      "backColor": "rgba(255,255,255,1)",
+      "image": "https://brand-settings-images130431-pictory.s3.us-east-2.amazonaws.com/public/Google_105776957074533560762/videos/bb0b9239-8e64-4a82-b221-19141b734a0b.mp4",
+      "lines": [
+        {
+          "subSceneId": 1,
+          "time": 1,
+          "text": "Happy new years, gamers,",
+          "html": "Happy new years, <strong>gamers</strong>,",
+          "format": {
+            "hideText": false,
+            "fontName": "Poppins-Bold",
+            "fontSize": "36",
+            "case": "case-none",
+            "decoration": "decor-none",
+            "fontColor": "rgba(200,81,9,1)",
+            "textBackgroundColor": "rgba(32,31,31,1)",
+            "textShadowColor": "rgba(255,255,255,1)",
+            "keywordColor": "rgba(8,163,163,1)",
+            "textAlign": "center",
+            "preset": "bottom-center",
+            "paragraphWidth": "90%",
+            "visual": {
+              "isLogo": true,
+              "position": {
+                "width": "17%",
+                "preset": "top-right"
+              },
+              "opacity": 1,
+              "visualUrl": ""
+            },
+            "styleIdObj": {
+              "id": "9b307e1f-fee6-4294-b12d-93a28856d816",
+              "scope": "global"
+            },
+            "animation": {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ]
+            },
+            "FontNameForFront": "Poppins; font-weight: bold"
+          },
+          "paragraphWidth": "90%"
+        },
+        {
+          "subSceneId": 2,
+          "time": 8,
+          "text": "We have exciting news to share with you today! Omori, the popular RPG game, has just reached a major milestone by selling over 1,000,000 copies.",
+          "html": "We have exciting news to share with you today! Omori, the popular <strong>RPG game</strong>, has just reached a major <strong>milestone</strong> by selling over 1,000,000 copies.",
+          "format": {
+            "hideText": false,
+            "fontName": "Poppins-Bold",
+            "fontSize": "36",
+            "case": "case-none",
+            "decoration": "decor-none",
+            "fontColor": "rgba(200,81,9,1)",
+            "textBackgroundColor": "rgba(32,31,31,1)",
+            "textShadowColor": "rgba(255,255,255,1)",
+            "keywordColor": "rgba(8,163,163,1)",
+            "textAlign": "center",
+            "preset": "bottom-center",
+            "paragraphWidth": "90%",
+            "visual": {
+              "isLogo": true,
+              "position": {
+                "width": "17%",
+                "preset": "top-right"
+              },
+              "opacity": 1,
+              "visualUrl": ""
+            },
+            "styleIdObj": {
+              "id": "9b307e1f-fee6-4294-b12d-93a28856d816",
+              "scope": "global"
+            },
+            "animation": {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ]
+            },
+            "FontNameForFront": "Poppins; font-weight: bold"
+          },
+          "paragraphWidth": "90%"
+        },
+        {
+          "subSceneId": 3,
+          "time": 7,
+          "text": "This news was announced on Twitter by the official Omori account and has received praise and congratulations from the gaming community.",
+          "html": "This news was announced on Twitter by the official Omori account and has received praise and <strong>congratulations</strong> from the <strong>gaming community</strong>.",
+          "format": {
+            "hideText": false,
+            "fontName": "Poppins-Bold",
+            "fontSize": "36",
+            "case": "case-none",
+            "decoration": "decor-none",
+            "fontColor": "rgba(200,81,9,1)",
+            "textBackgroundColor": "rgba(32,31,31,1)",
+            "textShadowColor": "rgba(255,255,255,1)",
+            "keywordColor": "rgba(8,163,163,1)",
+            "textAlign": "center",
+            "preset": "bottom-center",
+            "paragraphWidth": "90%",
+            "visual": {
+              "isLogo": true,
+              "position": {
+                "width": "17%",
+                "preset": "top-right"
+              },
+              "opacity": 1,
+              "visualUrl": ""
+            },
+            "styleIdObj": {
+              "id": "9b307e1f-fee6-4294-b12d-93a28856d816",
+              "scope": "global"
+            },
+            "animation": {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ]
+            },
+            "FontNameForFront": "Poppins; font-weight: bold"
+          },
+          "paragraphWidth": "90%"
+        },
+        {
+          "subSceneId": 4,
+          "time": 10,
+          "text": "While some have expressed their joy at the success of the game, others have shared their experiences as backers of the project and expressed their disappointment with the lengthy development process.",
+          "html": "While some have expressed their joy at the success of the <strong>game</strong>, others have shared their experiences as backers of the project and expressed their <strong>disappointment</strong> with the lengthy development process.",
+          "format": {
+            "hideText": false,
+            "fontName": "Poppins-Bold",
+            "fontSize": "36",
+            "case": "case-none",
+            "decoration": "decor-none",
+            "fontColor": "rgba(200,81,9,1)",
+            "textBackgroundColor": "rgba(32,31,31,1)",
+            "textShadowColor": "rgba(255,255,255,1)",
+            "keywordColor": "rgba(8,163,163,1)",
+            "textAlign": "center",
+            "preset": "bottom-center",
+            "paragraphWidth": "90%",
+            "visual": {
+              "isLogo": true,
+              "position": {
+                "width": "17%",
+                "preset": "top-right"
+              },
+              "opacity": 1,
+              "visualUrl": ""
+            },
+            "styleIdObj": {
+              "id": "9b307e1f-fee6-4294-b12d-93a28856d816",
+              "scope": "global"
+            },
+            "animation": {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ]
+            },
+            "FontNameForFront": "Poppins; font-weight: bold"
+          },
+          "paragraphWidth": "90%"
+        },
+        {
+          "subSceneId": 5,
+          "time": 8,
+          "text": "Despite these challenges, Omori has proven to be a hit among players, garnering praise for its unique aesthetics, engaging story, and memorable characters.",
+          "html": "Despite these challenges, Omori has proven to be a hit among <strong>players</strong>, garnering praise for its unique aesthetics, engaging story, and memorable <strong>characters</strong>.",
+          "format": {
+            "hideText": false,
+            "fontName": "Poppins-Bold",
+            "fontSize": "36",
+            "case": "case-none",
+            "decoration": "decor-none",
+            "fontColor": "rgba(200,81,9,1)",
+            "textBackgroundColor": "rgba(32,31,31,1)",
+            "textShadowColor": "rgba(255,255,255,1)",
+            "keywordColor": "rgba(8,163,163,1)",
+            "textAlign": "center",
+            "preset": "bottom-center",
+            "paragraphWidth": "90%",
+            "visual": {
+              "isLogo": true,
+              "position": {
+                "width": "17%",
+                "preset": "top-right"
+              },
+              "opacity": 1,
+              "visualUrl": ""
+            },
+            "styleIdObj": {
+              "id": "9b307e1f-fee6-4294-b12d-93a28856d816",
+              "scope": "global"
+            },
+            "animation": {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ]
+            },
+            "FontNameForFront": "Poppins; font-weight: bold"
+          },
+          "paragraphWidth": "90%"
+        },
+        {
+          "subSceneId": 6,
+          "time": 9,
+          "text": "If you haven't had a chance to play Omori yet, now is a great time to check it out and see what all the fuss is about.",
+          "html": "If you haven't had a <strong>chance</strong> to play Omori yet, now is a great time to check it out and see what all the <strong>fuss</strong> is about.",
+          "format": {
+            "hideText": false,
+            "fontName": "Poppins-Bold",
+            "fontSize": "36",
+            "case": "case-none",
+            "decoration": "decor-none",
+            "fontColor": "rgba(200,81,9,1)",
+            "textBackgroundColor": "rgba(32,31,31,1)",
+            "textShadowColor": "rgba(255,255,255,1)",
+            "keywordColor": "rgba(8,163,163,1)",
+            "textAlign": "center",
+            "preset": "bottom-center",
+            "paragraphWidth": "90%",
+            "visual": {
+              "isLogo": true,
+              "position": {
+                "width": "17%",
+                "preset": "top-right"
+              },
+              "opacity": 1,
+              "visualUrl": ""
+            },
+            "styleIdObj": {
+              "id": "9b307e1f-fee6-4294-b12d-93a28856d816",
+              "scope": "global"
+            },
+            "animation": {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ]
+            },
+            "FontNameForFront": "Poppins; font-weight: bold"
+          },
+          "paragraphWidth": "90%"
+        },
+        {
+          "subSceneId": 7,
+          "time": 3,
+          "text": "Congratulations to the Omori team on this impressive achievement!",
+          "html": "Congratulations to the Omori <strong>team</strong> on this impressive <strong>achievement</strong>!",
+          "format": {
+            "hideText": false,
+            "fontName": "Poppins-Bold",
+            "fontSize": "36",
+            "case": "case-none",
+            "decoration": "decor-none",
+            "fontColor": "rgba(200,81,9,1)",
+            "textBackgroundColor": "rgba(32,31,31,1)",
+            "textShadowColor": "rgba(255,255,255,1)",
+            "keywordColor": "rgba(8,163,163,1)",
+            "textAlign": "center",
+            "preset": "bottom-center",
+            "paragraphWidth": "90%",
+            "visual": {
+              "isLogo": true,
+              "position": {
+                "width": "17%",
+                "preset": "top-right"
+              },
+              "opacity": 1,
+              "visualUrl": ""
+            },
+            "styleIdObj": {
+              "id": "9b307e1f-fee6-4294-b12d-93a28856d816",
+              "scope": "global"
+            },
+            "animation": {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ]
+            },
+            "FontNameForFront": "Poppins; font-weight: bold"
+          },
+          "paragraphWidth": "90%"
+        },
+        {
+          "subSceneId": 8,
+          "time": 4,
+          "text": "That's all for now, stay tuned for more gaming updates.",
+          "html": "That's <strong>all</strong> for now, stay tuned for more <strong>gaming updates</strong>.",
+          "format": {
+            "hideText": false,
+            "fontName": "Poppins-Bold",
+            "fontSize": "36",
+            "case": "case-none",
+            "decoration": "decor-none",
+            "fontColor": "rgba(200,81,9,1)",
+            "textBackgroundColor": "rgba(32,31,31,1)",
+            "textShadowColor": "rgba(255,255,255,1)",
+            "keywordColor": "rgba(8,163,163,1)",
+            "textAlign": "center",
+            "preset": "bottom-center",
+            "paragraphWidth": "90%",
+            "visual": {
+              "isLogo": true,
+              "position": {
+                "width": "17%",
+                "preset": "top-right"
+              },
+              "opacity": 1,
+              "visualUrl": ""
+            },
+            "styleIdObj": {
+              "id": "9b307e1f-fee6-4294-b12d-93a28856d816",
+              "scope": "global"
+            },
+            "animation": {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ]
+            },
+            "FontNameForFront": "Poppins; font-weight: bold"
+          },
+          "paragraphWidth": "90%"
+        }
+      ],
+      "showLogo": false,
+      "imageMetadata": "{\"description\":\"Couple of gamers playing first person shooter videogame\",\"duration\":15,\"id\":11083488,\"keyword\":\"gamers\",\"large\":null,\"library\":\"story_blocks\",\"media_type\":\"video\",\"preview\":\"https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/BgrICs-NZj4hksnn3/videoblocks-couple-of-gamers-playing-first-person-shooter-videogame_hv8ruemrd__fe37657be8fc3358c6053938b3e4fbe3__P480.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1672691489104&publicKey=NFKFzias7JkF35W3n9edUuQV1Rnn7udTDco3ZbvzlsXgiAzLXO0a15shkgbMNmXZ&organizationId=103776&apiVersion=2.0&stockItemId=11083488&resolution=480p&endUserId=718890439cf9899e412f4e3d6c8148c452fb5959&projectId=dev&searchId=c19f15d9-bbe7-416d-9878-903c18689e18&searchPageId=545a079c-6405-409a-b61e-59f7824e8679\",\"preview_jpg\":\"https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/BgrICs-NZj4hksnn3/videoblocks-couple-of-gamers-playing-first-person-shooter-videogame_hv8ruemrd_thumbnail-180_01.jpg\",\"rank\":0.5355399496115548,\"thumb\":\"https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/BgrICs-NZj4hksnn3/videoblocks-couple-of-gamers-playing-first-person-shooter-videogame_hv8ruemrd__fe37657be8fc3358c6053938b3e4fbe3__P180.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1672691489104&publicKey=NFKFzias7JkF35W3n9edUuQV1Rnn7udTDco3ZbvzlsXgiAzLXO0a15shkgbMNmXZ&organizationId=103776&apiVersion=2.0&stockItemId=11083488&resolution=180p&endUserId=718890439cf9899e412f4e3d6c8148c452fb5959&projectId=dev&searchId=c19f15d9-bbe7-416d-9878-903c18689e18&searchPageId=545a079c-6405-409a-b61e-59f7824e8679\",\"thumb_jpg\":\"https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/BgrICs-NZj4hksnn3/videoblocks-couple-of-gamers-playing-first-person-shooter-videogame_hv8ruemrd_thumbnail-180_01.jpg\"}",
+      "transcription": false,
+      "keywords": [
+        "gamers"
+      ],
+      "settings": {
+        "applyHideTextToAllScene": false,
+        "videoOptions": {
+          "isCropped": false,
+          "segments": [
+            {
+              "start": 0,
+              "end": 0
+            }
+          ]
+        },
+        "voiceOver": true,
+        "applyImageZoomPanToAllScene": false,
+        "applyVoiceOverToAllScene": false,
+        "hideText": false,
+        "loopVideoAllScene": false,
+        "applyMusicToAllScene": false,
+        "music": true,
+        "imageZoomPan": true,
+        "loopVideo": true,
+        "muteClipAudioAllScene": false,
+        "muteClipAudio": true
+      },
+      "transcribeVideoLength": 0,
+      "subsentences": [
+        ""
+      ]
+    },
+    {
+      "sceneId": "Outro Scene",
+      "sentence": "Thanks for watching!",
+      "image": "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/hHeEEOX/videoblocks-modern-gamepad-on-a-dark-game-controller-close-up_biletrnn3e__347057ebc4aab722eb2d0382f4c84960__P480.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1671916707010&publicKey=NFKFzias7JkF35W3n9edUuQV1Rnn7udTDco3ZbvzlsXgiAzLXO0a15shkgbMNmXZ&organizationId=103776&apiVersion=2.0&stockItemId=9937711&resolution=480p&endUserId=718890439cf9899e412f4e3d6c8148c452fb5959&projectId=dev&searchId=b2f40ddb-5a80-4c93-bcbe-84c45a572f50&searchPageId=fe0a40b3-1d52-4919-9420-8ea4568b0658",
+      "lines": [
+        {
+          "subSceneId": 1,
+          "time": 2,
+          "text": "Thanks for watching!",
+          "html": "Thanks for watching!",
+          "format": {
+            "hideText": false,
+            "fontName": "Poppins-Bold",
+            "fontSize": "60",
+            "case": "case-none",
+            "decoration": "decor-bold",
+            "fontColor": "rgba(238,211,211,1)",
+            "textBackgroundColor": "rgba(232,50,89,0)",
+            "textShadowColor": "rgba(242,222,222,0)",
+            "textShadowWidthFr": 0.2,
+            "keywordColor": "rgba(240,203,203,1)",
+            "textAlign": "left",
+            "preset": "center-left",
+            "paragraphWidth": "59%",
+            "visual": {
+              "isLogo": true,
+              "visualType": "image",
+              "fileName": "logo-tp.png",
+              "isUploadedVideo": false,
+              "position": {
+                "width": "50%",
+                "preset": "top-right"
+              },
+              "opacity": 1,
+              "visualUrl": "https://brand-settings-images130431-pictory.s3.us-east-2.amazonaws.com/public/Google_105776957074533560762/project/1672006126062/uploads/20221230204822430.png",
+              "userModified": true
+            },
+            "styleIdObj": {
+              "id": "b7f52c8f-32b2-41d5-8cca-d5041e8c8c64",
+              "scope": "global"
+            },
+            "animation": {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.5,
+                  "animation": "fade-in-slide-down"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.5,
+                  "animation": "none"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.5,
+                  "animation": "fade-in-slide-down"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.5,
+                  "animation": "none"
+                }
+              ]
+            },
+            "FontNameForFront": "Poppins; font-weight: bold"
+          },
+          "paragraphWidth": "59%"
+        }
+      ],
+      "showLogo": true,
+      "transcription": false,
+      "settings": {
+        "applyHideTextToAllScene": false,
+        "videoOptions": {
+          "isCropped": true,
+          "segments": [
+            {
+              "start": 0,
+              "end": 0
+            }
+          ]
+        },
+        "voiceOver": true,
+        "applyImageZoomPanToAllScene": false,
+        "applyVoiceOverToAllScene": false,
+        "hideText": false,
+        "loopVideoAllScene": false,
+        "applyMusicToAllScene": false,
+        "music": true,
+        "imageZoomPan": true,
+        "loopVideo": true,
+        "muteClipAudioAllScene": false,
+        "muteClipAudio": true,
+        "hideScene": false
+      },
+      "subsentences": [
+        ""
+      ]
+    }
+  ],
+  "projectName": "Omori v3",
+  "projectCategory": "Omori reached 1 million copies sold",
+  "saveDate": "2023-01-02T20:58:53.197Z",
+  "animationTheme": "Animation2",
+  "scriptTxtData": "https://brand-settings-images130431-pictory.s3.us-east-2.amazonaws.com/public/Google_105776957074533560762/project/<<VIDEOID>>/script.json",
+  "cognito_id": "Google_105776957074533560762",
+  "project_id": <<VIDEOID>>,
+  "timePerFrame": [
+    5,
+    1.013,
+    9.537,
+    7.763,
+    9.562,
+    9.127,
+    6.347,
+    3.705,
+    3.37,
+    5
+  ],
+  "hasOneSubPerSentence": true,
+  "projectMetaData": {
+    "aspectRatioFontSizeFixed": true,
+    "sentencesIncludeKeywords": true
+  },
+  "templateMetaData": {
+    "defaultStyleIdScenes": "9b307e1f-fee6-4294-b12d-93a28856d816",
+    "scope": "user",
+    "createdBy": "leafblow@gmail.com",
+    "name": "GameTemplate (2)",
+    "defaultStyleIdIntro": "b7f52c8f-32b2-41d5-8cca-d5041e8c8c64",
+    "createDate": "2022-12-25T20:15:25.888Z",
+    "orderNumber": "04",
+    "defaultStyleIdOutro": "b7f52c8f-32b2-41d5-8cca-d5041e8c8c64",
+    "userId": "leafblow@gmail.com",
+    "usedDate": "2022-12-30T20:48:26.874Z",
+    "isCustomized": true,
+    "id": "68348b68-5c36-4568-9959-1a1bb08cc46e",
+    "origTemplateId": "6ba2f648-165e-4dc2-8b58-88efb6010dd4",
+    "type": "template"
+  },
+  "aspectRatioClass": "sixteen-nine",
+  "aspectRatioValue": "facebook-newsfeed-16-9",
+  "aspectRatioFractionValue": 1.77777777778,
+  "videoResolution": "1080p",
+  "assetResponseId": "f4d01b4f-2903-4e7c-9e45-05f451b1145a",
+  "textCategory": "Games",
+  "applyToAllScenes": false,
+  "currentActiveDiv": 1,
+  "timeChangedPostAIVO": true,
+  "transitionId": "none",
+  "title": "Hello gamers,",
+  "source": "script",
+  "bgMusicVolPercent": 10
+}
+
+
+2. Generate audio and get TTS file id?
+
+https://api.pictory.ai/audio/api/v3/voice-over
+
+{
+  "sentences": [
+    {
+      "voice_over": true,
+      "sentence": "Gaming news daily",
+      "duration": 5
+    },
+    {
+      "voice_over": true,
+      "sentence": "Happy new years, gamers,",
+      "linkToNextScene": true,
+      "duration": 1.013
+    },
+    {
+      "voice_over": true,
+      "sentence": "We have exciting news to share with you today! Omori, the popular RPG game, has just reached a major milestone by selling over 1,000,000 copies.",
+      "linkToNextScene": true,
+      "duration": 9.537
+    },
+    {
+      "voice_over": true,
+      "sentence": "This news was announced on Twitter by the official Omori account and has received praise and congratulations from the gaming community.",
+      "linkToNextScene": true,
+      "duration": 7.763
+    },
+    {
+      "voice_over": true,
+      "sentence": "While some have expressed their joy at the success of the game, others have shared their experiences as backers of the project and expressed their disappointment with the lengthy development process.",
+      "linkToNextScene": true,
+      "duration": 9.562
+    },
+    {
+      "voice_over": true,
+      "sentence": "Despite these challenges, Omori has proven to be a hit among players, garnering praise for its unique aesthetics, engaging story, and memorable characters.",
+      "linkToNextScene": true,
+      "duration": 9.127
+    },
+    {
+      "voice_over": true,
+      "sentence": "If you haven't had a chance to play Omori yet, now is a great time to check it out and see what all the fuss is about.",
+      "linkToNextScene": true,
+      "duration": 6.347
+    },
+    {
+      "voice_over": true,
+      "sentence": "Congratulations to the Omori team on this impressive achievement!",
+      "linkToNextScene": true,
+      "duration": 3.705
+    },
+    {
+      "voice_over": true,
+      "sentence": "That's all for now, stay tuned for more gaming updates.",
+      "duration": 3.37
+    },
+    {
+      "voice_over": true,
+      "sentence": "Thanks for watching!",
+      "duration": 5
+    }
+  ],
+  "voice": "1035",
+  "speed": 100,
+  "project_id": 1672691483642,
+  "user_id": "Google_105776957074533560762",
+  "client_id": "da2e9279-cdca-42e9-987d-aec08ec07e27"
+}
+RESPONSE ----------------------------
+async
+: 
+true
+response_id
+: 
+"37faeb3f-c9b8-416c-874a-4c598ebacde7"
+//response id to be looked up here:
+https://pictory-api-response.s3.amazonaws.com/37faeb3f-c9b8-416c-874a-4c598ebacde7.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA2GVAALU3HJV77HH2%2F20230102%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Date=20230102T224410Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHoaCXVzLWVhc3QtMiJHMEUCIByFA84On3lOG5dZ9351OspiLqJxq%2FkE7sxpvmUq94euAiEA%2BVevQbDJVpQUjmAgbKqWvA6ppYo5ceoBLIkOGNc4srMqnAQIxP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARADGgw3MDE0ODg5NzkyNTQiDHlWOqQ4j3z53jXBzyrwA4C1u6g%2BnwmExathhRU%2FnR54OAcRsLZxOE0wXbsOPF5cax8DU9WN8mi5iFCIOQuS74rgd5uA7iSvnTPVMezHjbt81QD2%2B7RlkgHoxmRsRG9kVpTaf0VVL%2FOIcpjyiAy1taZuSooE8TCfW8a7kNw42K5bq7nhrVdDXJykPZpsDLzcJFQbPozkjU6xRfqz7gzcTN83S7N%2FdTuaz1VAr3eN%2F6TsvoF4Fex7Y9kb8hzNRuVc7NXrnDdHNYBkR%2FoLP9fFKMkSLFXfJV%2FM%2FDDQsO5KrMWwo0xIde4jTecNXNikBrYk6GO%2BClZN%2BuSSRtjRtGY12uA2%2BHdjL6NTOqh6DbKd%2BNOLI2PUAPkeHuojmI2paLuo4RZWuU6uPBN8QiydxeP0jYoVr1lYl7GflMSV29fzh6lIATuMP5PIBxjM8YPoz4hkIafGpSupZfHUWyQpH6BA28rneVbBLLEhqncOZFvnKQXRhwQtMtvDvYYRMiComHJhGGGC08FJ4aObQdlYRnkrwexeujyPZrJVbY0yYXAGAV4t1f8u13utBbEpC2UFkdodfBby2xRdAp0BXAyuEA%2Foa2632xssXbzuku51ZsuYZ6gwCL6Id3lY4EqW1wavaOKatr4GZshcTmyMSodgZhdT7AWw9652o7j48Ut7yxbZdGIw%2BsHMnQY6pgEyXm%2BwX4y6pOTESzUGzYTGzZ5JNeYQtByKEMKx3jKlL82xnsKgJGaC2UpOvkR9ALLAMk1Gxv2kofGoPE4h7LQ5p9ddNRqy3Xmpc23xoUGtOna7HzcRHc6QNAzRgVzDYIYVrbToQq%2BuvUjtzukB38xeyp%2BcS2ZfziSzLxnsaO8SjG%2B7ZsrsHfkfWSxwDmigAF2M5w4xq%2FfYkxe3aYfMCMfGNWqfxbzl&X-Amz-Signature=a02ccade64638e8248b23d49ab693ced99f0e04d6c2bd9e6d5f4e25a5c028c4e
+
+
+
+2. Generate video: 
+https://api.pictory.ai/video-generation/api/v1/video
+{
+  "audio": {
+    "src": "https://tracks.melod.ie/track_versions/14491/MEL345_10_1_Discoteque_%28Full%29_SMINK.mp3?1632618601",
+    "audio_library": "melodie",
+    "audio_id": "2530",
+    "track_volume": 0.1,
+    "tts": "https://pictory-audios.s3.us-east-2.amazonaws.com/polly/production/projects/<<VIDEOID>>/a2c085180e174456b0b0f12547979eca.mp3"
+  },
+  "output": {
+    "width": 1920,
+    "height": 1080,
+    "format": "mp4",
+    "name": "Omorireached1million.mp4",
+    "title": "Omori reached 1 million copies sold",
+    "description": " Gaming news daily"
+  },
+  "scenes": [
+    {
+      "background": {
+        "src": [
+          {
+            "url": "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/msqd2XJ/videoblocks-61f0675fc706dd187baa775c_bwrrpj0tt__1c7143bb261e3d4fc8a4d9bb286cc6a7__P480.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1671999432561&publicKey=NFKFzias7JkF35W3n9edUuQV1Rnn7udTDco3ZbvzlsXgiAzLXO0a15shkgbMNmXZ&organizationId=103776&apiVersion=2.0&stockItemId=346783247&resolution=480p&endUserId=718890439cf9899e412f4e3d6c8148c452fb5959&projectId=dev&searchId=0c5b94b3-a78a-47a1-a72e-95dbe7261b0c&searchPageId=b28ab43c-d725-440a-a796-0cb171188437",
+            "asset_id": "",
+            "type": "video",
+            "library": "",
+            "mode": "crop",
+            "frame": null,
+            "loop_video": true,
+            "resource_id": "1f2085c4-f027-47c2-a1c8-44e43784682b",
+            "sessionId": "168b9ca1-dc2d-4d73-962c-3e01a9ad5578",
+            "mute": true
+          }
+        ],
+        "color": "rgba(255,255,255,255)",
+        "bg_animation": {
+          "animation": "pan-right"
+        },
+        "logo": {
+          "src": "https://brand-settings-images130431-pictory.s3.us-east-2.amazonaws.com/public/Google_105776957074533560762/project/1672006126062/uploads/20221230204628603.png",
+          "location": "top-right",
+          "opacity": 1,
+          "width": "50%"
+        }
+      },
+      "time": 4.999,
+      "keywords": [],
+      "sub_scenes": [
+        {
+          "time": 4.999,
+          "location": {
+            "start_x": 0,
+            "start_y": 817.56
+          },
+          "text_lines": [
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.5,
+                  "animation": "fade-in-slide-down"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.5,
+                  "animation": "none"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.5,
+                  "animation": "fade-in-slide-down"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.5,
+                  "animation": "none"
+                }
+              ],
+              "text": "Gaming news daily"
+            }
+          ],
+          "subtitle": "",
+          "showSceneNumber": "Custom Intro Scene",
+          "font": {
+            "name": "Poppins-Bold.ttf",
+            "size": 90,
+            "line_spacing": 1.2,
+            "color": "rgba(168,75,245,255)",
+            "backcolor": "rgba(232,50,89,0)",
+            "keycolor": "rgba(240,203,203,255)",
+            "line_height": 155.61000000000004,
+            "case": "case-none",
+            "decoration": "decor-bold",
+            "textShadowColor": "rgba(242,222,222,0)",
+            "textShadowWidthFr": 0.2
+          },
+          "displayItems": []
+        }
+      ],
+      "sentences": [],
+      "music": true,
+      "tts": true,
+      "subtitle": false,
+      "subtitles": [
+        {
+          "text": "Gaming news daily",
+          "time": 4.999
+        }
+      ],
+      "sceneDisplayNo": "Custom Intro Scene"
+    },
+    {
+      "background": {
+        "src": [
+          {
+            "url": "https://brand-settings-images130431-pictory.s3.us-east-2.amazonaws.com/public/Google_105776957074533560762/videos/bb0b9239-8e64-4a82-b221-19141b734a0b.mp4",
+            "asset_id": 11083488,
+            "type": "video",
+            "library": "story_blocks",
+            "mode": "crop",
+            "frame": null,
+            "loop_video": true,
+            "resource_id": "c14e2a06-0fb1-4634-8877-fcaae82c53aa",
+            "sessionId": "168b9ca1-dc2d-4d73-962c-3e01a9ad5578",
+            "mute": true
+          }
+        ],
+        "color": "rgba(255,255,255,255)"
+      },
+      "time": 50.647999999999996,
+      "keywords": [
+        "gamers"
+      ],
+      "sub_scenes": [
+        {
+          "time": 1.236,
+          "location": {
+            "preset": "bottom-center",
+            "center_x": 960,
+            "start_y": 896.4000000000001
+          },
+          "text_lines": [
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text": "Hello <strong>gamers</strong>,"
+            }
+          ],
+          "subtitle": "",
+          "showSceneNumber": "Scene 1",
+          "font": {
+            "name": "Poppins-Bold.ttf",
+            "size": 54,
+            "line_spacing": 1.2,
+            "color": "rgba(200,81,9,255)",
+            "backcolor": "rgba(32,31,31,255)",
+            "keycolor": "rgba(8,163,163,255)",
+            "line_height": 93.36600000000001,
+            "case": "case-none",
+            "decoration": "decor-none",
+            "textShadowColor": "rgba(255,255,255,1)"
+          },
+          "displayItems": []
+        },
+        {
+          "time": 9.54,
+          "location": {
+            "preset": "bottom-center",
+            "center_x": 960,
+            "start_y": 573.9000000000001
+          },
+          "text_lines": [
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text": "We have exciting news to share with you"
+            },
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text": "today! Omori, the popular <strong>RPG game</strong>, has just"
+            },
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text": "reached a major <strong>milestone</strong> by selling over"
+            },
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text": "1,000,000 copies."
+            }
+          ],
+          "subtitle": "",
+          "showSceneNumber": "Scene 2",
+          "font": {
+            "name": "Poppins-Bold.ttf",
+            "size": 54,
+            "line_spacing": 1.2,
+            "color": "rgba(200,81,9,255)",
+            "backcolor": "rgba(32,31,31,255)",
+            "keycolor": "rgba(8,163,163,255)",
+            "line_height": 93.36600000000001,
+            "case": "case-none",
+            "decoration": "decor-none",
+            "textShadowColor": "rgba(255,255,255,1)"
+          },
+          "displayItems": []
+        },
+        {
+          "time": 7.762,
+          "location": {
+            "preset": "bottom-center",
+            "center_x": 960,
+            "start_y": 573.9000000000001
+          },
+          "text_lines": [
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text": "This news was announced on Twitter by the"
+            },
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text": "official Omori account and has received"
+            },
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text": "widespread praise and <strong>congratulations</strong> from"
+            },
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text": "the <strong>gaming community</strong>."
+            }
+          ],
+          "subtitle": "",
+          "showSceneNumber": "Scene 3",
+          "font": {
+            "name": "Poppins-Bold.ttf",
+            "size": 54,
+            "line_spacing": 1.2,
+            "color": "rgba(200,81,9,255)",
+            "backcolor": "rgba(32,31,31,255)",
+            "keycolor": "rgba(8,163,163,255)",
+            "line_height": 93.36600000000001,
+            "case": "case-none",
+            "decoration": "decor-none",
+            "textShadowColor": "rgba(255,255,255,1)"
+          },
+          "displayItems": []
+        },
+        {
+          "time": 9.563,
+          "location": {
+            "preset": "bottom-center",
+            "center_x": 960,
+            "start_y": 465.90000000000003
+          },
+          "text_lines": [
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text": "While some have expressed their joy at the"
+            },
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text": "success of the <strong>game</strong>, others have shared their"
+            },
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text": "experiences as backers of the project and"
+            },
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text": "expressed their <strong>disappointment</strong> with the"
+            },
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text": "lengthy development process."
+            }
+          ],
+          "subtitle": "",
+          "showSceneNumber": "Scene 4",
+          "font": {
+            "name": "Poppins-Bold.ttf",
+            "size": 54,
+            "line_spacing": 1.2,
+            "color": "rgba(200,81,9,255)",
+            "backcolor": "rgba(32,31,31,255)",
+            "keycolor": "rgba(8,163,163,255)",
+            "line_height": 93.36600000000001,
+            "case": "case-none",
+            "decoration": "decor-none",
+            "textShadowColor": "rgba(255,255,255,1)"
+          },
+          "displayItems": []
+        },
+        {
+          "time": 9.126,
+          "location": {
+            "preset": "bottom-center",
+            "center_x": 960,
+            "start_y": 573.9000000000001
+          },
+          "text_lines": [
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text": "Despite these challenges, Omori has proven"
+            },
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text": "to be a hit among <strong>players</strong>, garnering praise"
+            },
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text": "for its unique aesthetics, engaging story, and"
+            },
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text": "memorable <strong>characters</strong>."
+            }
+          ],
+          "subtitle": "",
+          "showSceneNumber": "Scene 5",
+          "font": {
+            "name": "Poppins-Bold.ttf",
+            "size": 54,
+            "line_spacing": 1.2,
+            "color": "rgba(200,81,9,255)",
+            "backcolor": "rgba(32,31,31,255)",
+            "keycolor": "rgba(8,163,163,255)",
+            "line_height": 93.36600000000001,
+            "case": "case-none",
+            "decoration": "decor-none",
+            "textShadowColor": "rgba(255,255,255,1)"
+          },
+          "displayItems": []
+        },
+        {
+          "time": 6.348,
+          "location": {
+            "preset": "bottom-center",
+            "center_x": 960,
+            "start_y": 681.9000000000001
+          },
+          "text_lines": [
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text": "If you haven&#x27;t had a <strong>chance</strong> to play Omori yet,"
+            },
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text": "now is a great time to check it out and see"
+            },
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text": "what all the <strong>fuss</strong> is about."
+            }
+          ],
+          "subtitle": "",
+          "showSceneNumber": "Scene 6",
+          "font": {
+            "name": "Poppins-Bold.ttf",
+            "size": 54,
+            "line_spacing": 1.2,
+            "color": "rgba(200,81,9,255)",
+            "backcolor": "rgba(32,31,31,255)",
+            "keycolor": "rgba(8,163,163,255)",
+            "line_height": 93.36600000000001,
+            "case": "case-none",
+            "decoration": "decor-none",
+            "textShadowColor": "rgba(255,255,255,1)"
+          },
+          "displayItems": []
+        },
+        {
+          "time": 3.704,
+          "location": {
+            "preset": "bottom-center",
+            "center_x": 960,
+            "start_y": 788.4000000000001
+          },
+          "text_lines": [
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text": "Congratulations to the Omori <strong>team</strong> on this"
+            },
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text": "impressive <strong>achievement</strong>!"
+            }
+          ],
+          "subtitle": "",
+          "showSceneNumber": "Scene 7",
+          "font": {
+            "name": "Poppins-Bold.ttf",
+            "size": 54,
+            "line_spacing": 1.2,
+            "color": "rgba(200,81,9,255)",
+            "backcolor": "rgba(32,31,31,255)",
+            "keycolor": "rgba(8,163,163,255)",
+            "line_height": 93.36600000000001,
+            "case": "case-none",
+            "decoration": "decor-none",
+            "textShadowColor": "rgba(255,255,255,1)"
+          },
+          "displayItems": []
+        },
+        {
+          "time": 3.369,
+          "location": {
+            "preset": "bottom-center",
+            "center_x": 960,
+            "start_y": 788.4000000000001
+          },
+          "text_lines": [
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text": "That&#x27;s <strong>all</strong> for now, stay tuned for more <strong>gaming</strong>"
+            },
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.05,
+                  "animation": "fade-in-slide-up"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.05,
+                  "animation": "fade-out-slide-up"
+                }
+              ],
+              "text": "<strong>updates</strong>."
+            }
+          ],
+          "subtitle": "",
+          "showSceneNumber": "Scene 8",
+          "font": {
+            "name": "Poppins-Bold.ttf",
+            "size": 54,
+            "line_spacing": 1.2,
+            "color": "rgba(200,81,9,255)",
+            "backcolor": "rgba(32,31,31,255)",
+            "keycolor": "rgba(8,163,163,255)",
+            "line_height": 93.36600000000001,
+            "case": "case-none",
+            "decoration": "decor-none",
+            "textShadowColor": "rgba(255,255,255,1)"
+          },
+          "displayItems": []
+        }
+      ],
+      "sentences": [],
+      "music": true,
+      "tts": true,
+      "subtitle": false,
+      "subtitles": [
+        {
+          "text": "Hello gamers,",
+          "time": 1.236
+        },
+        {
+          "text": "We have exciting news to share with you today! Omori, the popular RPG game, has just reached a major milestone by selling over 1,000,000 copies.",
+          "time": 9.54
+        },
+        {
+          "text": "This news was announced on Twitter by the official Omori account and has received widespread praise and congratulations from the gaming community.",
+          "time": 7.762
+        },
+        {
+          "text": "While some have expressed their joy at the success of the game, others have shared their experiences as backers of the project and expressed their disappointment with the lengthy development process.",
+          "time": 9.563
+        },
+        {
+          "text": "Despite these challenges, Omori has proven to be a hit among players, garnering praise for its unique aesthetics, engaging story, and memorable characters.",
+          "time": 9.126
+        },
+        {
+          "text": "If you haven't had a chance to play Omori yet, now is a great time to check it out and see what all the fuss is about.",
+          "time": 6.348
+        },
+        {
+          "text": "Congratulations to the Omori team on this impressive achievement!",
+          "time": 3.704
+        },
+        {
+          "text": "That's all for now, stay tuned for more gaming updates.",
+          "time": 3.369
+        }
+      ],
+      "sceneDisplayNo": "Scene 1"
+    },
+    {
+      "background": {
+        "src": [
+          {
+            "url": "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/hHeEEOX/videoblocks-modern-gamepad-on-a-dark-game-controller-close-up_biletrnn3e__347057ebc4aab722eb2d0382f4c84960__P480.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1671916707010&publicKey=NFKFzias7JkF35W3n9edUuQV1Rnn7udTDco3ZbvzlsXgiAzLXO0a15shkgbMNmXZ&organizationId=103776&apiVersion=2.0&stockItemId=9937711&resolution=480p&endUserId=718890439cf9899e412f4e3d6c8148c452fb5959&projectId=dev&searchId=b2f40ddb-5a80-4c93-bcbe-84c45a572f50&searchPageId=fe0a40b3-1d52-4919-9420-8ea4568b0658",
+            "asset_id": "",
+            "type": "video",
+            "library": "",
+            "mode": "crop",
+            "frame": null,
+            "loop_video": true,
+            "resource_id": "44e9f2b4-f1e6-44bb-983e-580ce7c96db5",
+            "sessionId": "168b9ca1-dc2d-4d73-962c-3e01a9ad5578",
+            "mute": true
+          }
+        ],
+        "logo": {
+          "src": "https://brand-settings-images130431-pictory.s3.us-east-2.amazonaws.com/public/Google_105776957074533560762/project/1672006126062/uploads/20221230204822430.png",
+          "location": "top-right",
+          "opacity": 1,
+          "width": "50%"
+        }
+      },
+      "time": 4.999,
+      "keywords": [],
+      "sub_scenes": [
+        {
+          "time": 4.999,
+          "location": {
+            "preset": "center-left",
+            "start_x": 76.5,
+            "start_y": 360.75
+          },
+          "text_lines": [
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.5,
+                  "animation": "fade-in-slide-down"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.5,
+                  "animation": "none"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.5,
+                  "animation": "fade-in-slide-down"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.5,
+                  "animation": "none"
+                }
+              ],
+              "text": "Thanks for"
+            },
+            {
+              "text_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.5,
+                  "animation": "fade-in-slide-down"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.5,
+                  "animation": "none"
+                }
+              ],
+              "text_bg_animation": [
+                {
+                  "source": "templates",
+                  "type": "start",
+                  "speed": 1.5,
+                  "animation": "fade-in-slide-down"
+                },
+                {
+                  "source": "templates",
+                  "type": "end",
+                  "speed": 1.5,
+                  "animation": "none"
+                }
+              ],
+              "text": "watching!"
+            }
+          ],
+          "subtitle": "",
+          "showSceneNumber": "Outro Scene",
+          "font": {
+            "name": "Poppins-Bold.ttf",
+            "size": 90,
+            "line_spacing": 1.2,
+            "color": "rgba(238,211,211,255)",
+            "backcolor": "rgba(232,50,89,0)",
+            "keycolor": "rgba(240,203,203,255)",
+            "line_height": 155.61000000000004,
+            "case": "case-none",
+            "decoration": "decor-bold",
+            "textShadowColor": "rgba(242,222,222,0)",
+            "textShadowWidthFr": 0.2
+          },
+          "displayItems": []
+        }
+      ],
+      "sentences": [],
+      "music": true,
+      "tts": true,
+      "subtitle": false,
+      "subtitles": [
+        {
+          "text": "Thanks for watching!",
+          "time": 4.999
+        }
+      ],
+      "sceneDisplayNo": "Outro Scene",
+      "music-fade-out": true
+    }
+  ],
+  "optimize_video_output": false,
+  "projectId": <<VIDEOID>>,
+  "next_generation_video": true
+}
+
+
+GET: https://api.pictory.ai/projects/api/v1/projects/object/<<VIDEOID>>
+
+wait for: videoURL field
